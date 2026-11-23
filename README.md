@@ -35,3 +35,7 @@ Code samples are educational examples, not executed by the website. Verify again
 - Notes page lists personal notes alongside existing reference notes.
 - Personal notes are stored in `localStorage` under `ducks-in-order-lesson-notes-v5` and are browser-specific. Back up important notes manually.
 - Version 4 progress is retained in its original key.
+
+
+## Version 6 — lesson notebook
+Each lesson has Existing Notes and Add a New Note. Entries append rather than replace earlier notes. Previous v5 notes migrate automatically in the same browser. Notes page offers JSON export and import (merging without duplicates). Upload exported `ducks-in-order-notes.json` to GitHub for backup; to restore, download and import it on Notes. Uploading alone does not sync the website automatically. Avoid private information in public repositories.
