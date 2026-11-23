@@ -27,3 +27,11 @@ Code samples are educational examples, not executed by the website. Verify again
 - Concept checks grade predefined answers only. SQL/Python free-response exercises are **not** automatically executed or graded.
 - Do not upload a personal progress backup into the public GitHub repository.
 - Lesson content lives in lessons/*.json; resources are in each lesson's `resources` list.
+
+
+## Version 5
+- Curriculum is the high-level map, with direct lesson links, progress labels, and inline per-lesson note editors.
+- Study Guides retain the full instructional material and now include the same per-lesson note.
+- Notes page lists personal notes alongside existing reference notes.
+- Personal notes are stored in `localStorage` under `ducks-in-order-lesson-notes-v5` and are browser-specific. Back up important notes manually.
+- Version 4 progress is retained in its original key.
