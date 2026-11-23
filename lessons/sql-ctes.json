@@ -39,5 +39,29 @@
     ],
     "correct": 0,
     "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  },
+  "objectives": [
+    "Explain scope and execution semantics of nonrecursive CTEs",
+    "Break a multi-step aggregation into named transformations",
+    "Choose between a CTE, subquery and temporary table"
+  ],
+  "common_mistakes": [
+    "Assuming a CTE materializes or always improves performance",
+    "Trying to reuse a CTE in multiple subsequent statements",
+    "Filtering aggregate values with WHERE inside the grouped SELECT"
+  ],
+  "study_prompt": "Without looking at the reference solution, explain when you would use ctes, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "deep_dive": {
+    "heading": "CTE versus temporary table: when the choice matters",
+    "paragraphs": [
+      "A nonrecursive CTE names a query expression for one immediately following statement. The optimizer can inline its definition; it is not a guarantee that the intermediate result is computed or stored once.",
+      "A #temporary table exists in tempdb for the session or scope. It can be indexed, inspected and referenced by multiple subsequent statements, but creating it adds a write step.",
+      "For a short readable transformation, start with a CTE. For repeated reuse or a very large intermediate result, benchmark a temporary table. Compare actual execution plans and logical reads rather than assuming one is faster."
+    ],
+    "code": "WITH CustomerRevenue AS (\n    SELECT CustomerID, SUM(Amount) AS TotalRevenue\n    FROM Orders\n    GROUP BY CustomerID\n)\nSELECT CustomerID, TotalRevenue\nFROM CustomerRevenue\nWHERE TotalRevenue > 500;",
+    "questions": [
+      "Why can a CTE not be referenced by a second independent SELECT?",
+      "What would you measure before replacing a CTE with a #temp table?"
+    ]
   }
 }

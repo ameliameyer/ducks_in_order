@@ -1,0 +1,134 @@
+{
+  "version": 8,
+  "method": "Curriculum coverage audit of the existing 52-topic catalog, expanded into foundational, applied and advanced tracks. Planned entries are outlines, not published lessons.",
+  "tracks": [
+    {
+      "track": "SQL",
+      "total": 16,
+      "ready": 9,
+      "planned": 7
+    },
+    {
+      "track": "Python",
+      "total": 12,
+      "ready": 6,
+      "planned": 6
+    },
+    {
+      "track": "Statistics",
+      "total": 13,
+      "ready": 6,
+      "planned": 7
+    },
+    {
+      "track": "Product Analytics",
+      "total": 10,
+      "ready": 0,
+      "planned": 10
+    },
+    {
+      "track": "Snowflake",
+      "total": 9,
+      "ready": 0,
+      "planned": 9
+    },
+    {
+      "track": "Analytics Engineering",
+      "total": 9,
+      "ready": 0,
+      "planned": 9
+    },
+    {
+      "track": "Experimentation",
+      "total": 9,
+      "ready": 0,
+      "planned": 9
+    },
+    {
+      "track": "Machine Learning",
+      "total": 11,
+      "ready": 0,
+      "planned": 11
+    },
+    {
+      "track": "MLOps and AI",
+      "total": 8,
+      "ready": 0,
+      "planned": 8
+    },
+    {
+      "track": "Mathematics for Data Science",
+      "total": 7,
+      "ready": 0,
+      "planned": 7
+    },
+    {
+      "track": "Probability",
+      "total": 8,
+      "ready": 0,
+      "planned": 8
+    },
+    {
+      "track": "Data Engineering",
+      "total": 8,
+      "ready": 0,
+      "planned": 8
+    },
+    {
+      "track": "Data Visualization",
+      "total": 6,
+      "ready": 0,
+      "planned": 6
+    },
+    {
+      "track": "Software Engineering",
+      "total": 7,
+      "ready": 0,
+      "planned": 7
+    },
+    {
+      "track": "Deep Learning and NLP",
+      "total": 7,
+      "ready": 0,
+      "planned": 7
+    },
+    {
+      "track": "Time Series and Forecasting",
+      "total": 5,
+      "ready": 0,
+      "planned": 5
+    },
+    {
+      "track": "Ethics and Responsible Data Science",
+      "total": 5,
+      "ready": 0,
+      "planned": 5
+    },
+    {
+      "track": "Career and Research Practice",
+      "total": 5,
+      "ready": 0,
+      "planned": 5
+    }
+  ],
+  "priority_gaps": [
+    "Probability and linear algebra foundations",
+    "Data engineering and dimensional modeling",
+    "Software engineering and reproducibility",
+    "Data visualization and communication",
+    "Time-series forecasting",
+    "Deep learning and NLP",
+    "Privacy, fairness and responsible analytics"
+  ],
+  "lesson_standard": [
+    "Concept overview",
+    "Worked example",
+    "Step-by-step breakdown",
+    "Learning objectives and prerequisites",
+    "Common mistakes",
+    "Independent practice and reference answer",
+    "Knowledge check",
+    "Free written references",
+    "Lesson notes and mastery"
+  ]
+}

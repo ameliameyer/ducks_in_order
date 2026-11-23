@@ -46,3 +46,11 @@ Each lesson has Existing Notes and Add a New Note. Entries append rather than re
 - Dashboard title and description updated.
 - Curriculum page explicitly titled Full Curriculum; Study Guides remains a separate lesson reader.
 - Bumped CSS/JS cache version to 7.
+
+
+## Version 8 — Curriculum audit, deeper study guides, Projects
+
+- Expanded the curriculum from 52 to 155 mapped topics across 18 tracks; 21 existing study guides remain Ready, 134 are honestly marked Planned. Audit counts and gap list: `data/curriculum-audit.json`.
+- All 21 existing SQL, Python and Statistics lessons now have explicit objectives, common mistakes and transfer exercises; five key lessons have additional authored deep-dive explanations and examples. The original lesson content and existing notes/mastery storage are preserved.
+- New `projects.html`: add projects, choose any number of curriculum topic tags, update status, edit or delete projects, and export/import JSON. Data lives in browser localStorage until exported; committing an export to GitHub is manual.
+- Project backups are separate from notes and mastery backups. Existing v6 notes continue to use the same storage key.

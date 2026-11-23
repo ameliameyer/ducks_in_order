@@ -37,5 +37,16 @@
     ],
     "correct": 0,
     "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
-  }
+  },
+  "objectives": [
+    "Explain the purpose of confidence intervals in statistics workflows",
+    "Interpret the worked confidence intervals example step by step",
+    "Apply confidence intervals to a new dataset and validate the result"
+  ],
+  "common_mistakes": [
+    "Copying the example without checking assumptions or input data",
+    "Ignoring missing values, duplicate rows, or the unit of analysis",
+    "Failing to validate results against a simpler baseline or hand calculation"
+  ],
+  "study_prompt": "Without looking at the reference solution, explain when you would use confidence intervals, reproduce the example on a different dataset, and identify one situation where the method could mislead."
 }

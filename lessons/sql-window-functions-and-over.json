@@ -38,5 +38,29 @@
     ],
     "correct": 0,
     "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  },
+  "objectives": [
+    "Explain partitioning versus grouping",
+    "Use OVER with ORDER BY to compute running metrics",
+    "Check the row grain before adding a window calculation"
+  ],
+  "common_mistakes": [
+    "Omitting a deterministic ORDER BY when sequence matters",
+    "Confusing windowed SUM with GROUP BY",
+    "Forgetting the default frame can affect running totals"
+  ],
+  "study_prompt": "Without looking at the reference solution, explain when you would use window functions and over, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "deep_dive": {
+    "heading": "Why the row grain stays intact",
+    "paragraphs": [
+      "GROUP BY collapses rows into one row per group. Window functions calculate over a partition while preserving the original detail rows.",
+      "PARTITION BY defines which rows belong together; ORDER BY defines the calculation sequence. For a running total, specify ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW to make the frame explicit.",
+      "If multiple rows share the same date, add a stable secondary sort key when the intended sequence requires it."
+    ],
+    "code": "SELECT CustomerID, OrderID, OrderDate, Amount,\n       SUM(Amount) OVER (\n           PARTITION BY CustomerID\n           ORDER BY OrderDate, OrderID\n           ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n       ) AS RunningRevenue\nFROM Orders;",
+    "questions": [
+      "How many rows does this query return relative to Orders?",
+      "What happens if you remove PARTITION BY CustomerID?"
+    ]
   }
 }

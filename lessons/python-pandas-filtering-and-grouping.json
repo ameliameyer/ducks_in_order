@@ -42,5 +42,29 @@
     ],
     "correct": 0,
     "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  },
+  "objectives": [
+    "Filter rows with boolean masks",
+    "Aggregate with groupby without losing track of granularity",
+    "Handle missing values intentionally"
+  ],
+  "common_mistakes": [
+    "Using Python and/or on pandas Series",
+    "Treating missing values as zeros without justification",
+    "Forgetting groupby keys and index behavior"
+  ],
+  "study_prompt": "Without looking at the reference solution, explain when you would use pandas filtering and grouping, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "deep_dive": {
+    "heading": "Keep the aggregation grain explicit",
+    "paragraphs": [
+      "A filtered DataFrame retains only rows satisfying a boolean mask. Use parentheses around each comparison when combining masks with & or |.",
+      "Groupby collapses the original row-level records into the chosen grouping keys. The as_index=False option returns keys as ordinary columns, which often simplifies downstream joins.",
+      "Validate the sum of group totals against the filtered input sum to catch dropped rows or unexpected missing grouping keys."
+    ],
+    "code": "active = orders.loc[(orders[\"status\"] == \"paid\") & (orders[\"amount\"] > 0)].copy()\nby_customer = active.groupby(\"customer_id\", as_index=False, dropna=False).agg(\n    revenue=(\"amount\", \"sum\"),\n    order_count=(\"order_id\", \"nunique\")\n)\nassert abs(by_customer[\"revenue\"].sum() - active[\"amount\"].sum()) < 1e-8",
+    "questions": [
+      "Why use & instead of and?",
+      "Why might dropna=False matter for reconciliation?"
+    ]
   }
 }

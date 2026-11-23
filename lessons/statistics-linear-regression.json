@@ -45,5 +45,29 @@
     ],
     "correct": 0,
     "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  },
+  "objectives": [
+    "Interpret slope and intercept in context",
+    "Distinguish association from causal effects",
+    "Inspect residual patterns and prediction uncertainty"
+  ],
+  "common_mistakes": [
+    "Treating a significant slope as proof of causation",
+    "Extrapolating beyond observed x values",
+    "Ignoring nonlinearity and influential points"
+  ],
+  "study_prompt": "Without looking at the reference solution, explain when you would use linear regression, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "deep_dive": {
+    "heading": "From fitted line to trustworthy interpretation",
+    "paragraphs": [
+      "Ordinary least squares chooses coefficients that minimize the sum of squared residuals. The slope estimates the average change in predicted y per one-unit increase in x, conditional on the model.",
+      "Plot residuals against fitted values to inspect nonlinearity and changing variance. Check whether influential observations dominate the fitted line.",
+      "A predictive association is not automatically causal. Confounding, reverse causality and selection effects can all produce a slope without a causal effect."
+    ],
+    "code": "import statsmodels.api as sm\nX = sm.add_constant(df[[\"ad_spend\"]])\nmodel = sm.OLS(df[\"sales\"], X, missing=\"drop\").fit()\nprint(model.summary())\nprint(model.conf_int())",
+    "questions": [
+      "How would you interpret a slope of 2.4 if spend is in dollars?",
+      "What residual pattern would make a straight-line model questionable?"
+    ]
   }
 }

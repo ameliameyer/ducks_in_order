@@ -414,5 +414,829 @@
     "order": 5,
     "status": "planned",
     "file": "lessons/mlops-and-ai-ai-assisted-analytics-verification.json"
+  },
+  {
+    "id": "mathematics-for-data-science-linear-algebra-vectors-and-matrices",
+    "track": "Mathematics for Data Science",
+    "title": "Linear algebra: vectors and matrices",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/mathematics-for-data-science-linear-algebra-vectors-and-matrices.json"
+  },
+  {
+    "id": "mathematics-for-data-science-matrix-multiplication-and-transformations",
+    "track": "Mathematics for Data Science",
+    "title": "Matrix multiplication and transformations",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/mathematics-for-data-science-matrix-multiplication-and-transformations.json"
+  },
+  {
+    "id": "mathematics-for-data-science-eigenvalues-and-eigenvectors",
+    "track": "Mathematics for Data Science",
+    "title": "Eigenvalues and eigenvectors",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/mathematics-for-data-science-eigenvalues-and-eigenvectors.json"
+  },
+  {
+    "id": "mathematics-for-data-science-calculus-derivatives-and-gradients",
+    "track": "Mathematics for Data Science",
+    "title": "Calculus: derivatives and gradients",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/mathematics-for-data-science-calculus-derivatives-and-gradients.json"
+  },
+  {
+    "id": "mathematics-for-data-science-partial-derivatives-and-chain-rule",
+    "track": "Mathematics for Data Science",
+    "title": "Partial derivatives and chain rule",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/mathematics-for-data-science-partial-derivatives-and-chain-rule.json"
+  },
+  {
+    "id": "mathematics-for-data-science-optimization-and-gradient-descent",
+    "track": "Mathematics for Data Science",
+    "title": "Optimization and gradient descent",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/mathematics-for-data-science-optimization-and-gradient-descent.json"
+  },
+  {
+    "id": "mathematics-for-data-science-discrete-mathematics-and-logic",
+    "track": "Mathematics for Data Science",
+    "title": "Discrete mathematics and logic",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/mathematics-for-data-science-discrete-mathematics-and-logic.json"
+  },
+  {
+    "id": "probability-counting-and-probability-rules",
+    "track": "Probability",
+    "title": "Counting and probability rules",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/probability-counting-and-probability-rules.json"
+  },
+  {
+    "id": "probability-conditional-probability-and-bayes-theorem",
+    "track": "Probability",
+    "title": "Conditional probability and Bayes theorem",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/probability-conditional-probability-and-bayes-theorem.json"
+  },
+  {
+    "id": "probability-random-variables-and-expected-value",
+    "track": "Probability",
+    "title": "Random variables and expected value",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/probability-random-variables-and-expected-value.json"
+  },
+  {
+    "id": "probability-variance-and-covariance",
+    "track": "Probability",
+    "title": "Variance and covariance",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/probability-variance-and-covariance.json"
+  },
+  {
+    "id": "probability-discrete-probability-distributions",
+    "track": "Probability",
+    "title": "Discrete probability distributions",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/probability-discrete-probability-distributions.json"
+  },
+  {
+    "id": "probability-continuous-probability-distributions",
+    "track": "Probability",
+    "title": "Continuous probability distributions",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/probability-continuous-probability-distributions.json"
+  },
+  {
+    "id": "probability-law-of-large-numbers-and-central-limit-theorem",
+    "track": "Probability",
+    "title": "Law of large numbers and central limit theorem",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/probability-law-of-large-numbers-and-central-limit-theorem.json"
+  },
+  {
+    "id": "probability-monte-carlo-simulation",
+    "track": "Probability",
+    "title": "Monte Carlo simulation",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/probability-monte-carlo-simulation.json"
+  },
+  {
+    "id": "data-engineering-relational-database-design-and-normalization",
+    "track": "Data Engineering",
+    "title": "Relational database design and normalization",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/data-engineering-relational-database-design-and-normalization.json"
+  },
+  {
+    "id": "data-engineering-data-warehouse-architecture",
+    "track": "Data Engineering",
+    "title": "Data warehouse architecture",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/data-engineering-data-warehouse-architecture.json"
+  },
+  {
+    "id": "data-engineering-etl-versus-elt",
+    "track": "Data Engineering",
+    "title": "ETL versus ELT",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/data-engineering-etl-versus-elt.json"
+  },
+  {
+    "id": "data-engineering-batch-versus-streaming-ingestion",
+    "track": "Data Engineering",
+    "title": "Batch versus streaming ingestion",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/data-engineering-batch-versus-streaming-ingestion.json"
+  },
+  {
+    "id": "data-engineering-data-quality-contracts-and-validation",
+    "track": "Data Engineering",
+    "title": "Data quality contracts and validation",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/data-engineering-data-quality-contracts-and-validation.json"
+  },
+  {
+    "id": "data-engineering-orchestration-and-scheduling",
+    "track": "Data Engineering",
+    "title": "Orchestration and scheduling",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/data-engineering-orchestration-and-scheduling.json"
+  },
+  {
+    "id": "data-engineering-incremental-loads-and-change-data-capture",
+    "track": "Data Engineering",
+    "title": "Incremental loads and change data capture",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/data-engineering-incremental-loads-and-change-data-capture.json"
+  },
+  {
+    "id": "data-engineering-data-governance-and-lineage",
+    "track": "Data Engineering",
+    "title": "Data governance and lineage",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/data-engineering-data-governance-and-lineage.json"
+  },
+  {
+    "id": "data-visualization-chart-selection-and-visual-perception",
+    "track": "Data Visualization",
+    "title": "Chart selection and visual perception",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/data-visualization-chart-selection-and-visual-perception.json"
+  },
+  {
+    "id": "data-visualization-dashboard-layout-and-accessibility",
+    "track": "Data Visualization",
+    "title": "Dashboard layout and accessibility",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/data-visualization-dashboard-layout-and-accessibility.json"
+  },
+  {
+    "id": "data-visualization-tableau-calculations-and-parameters",
+    "track": "Data Visualization",
+    "title": "Tableau calculations and parameters",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/data-visualization-tableau-calculations-and-parameters.json"
+  },
+  {
+    "id": "data-visualization-power-bi-and-dax-foundations",
+    "track": "Data Visualization",
+    "title": "Power BI and DAX foundations",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/data-visualization-power-bi-and-dax-foundations.json"
+  },
+  {
+    "id": "data-visualization-storytelling-with-analytical-findings",
+    "track": "Data Visualization",
+    "title": "Storytelling with analytical findings",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/data-visualization-storytelling-with-analytical-findings.json"
+  },
+  {
+    "id": "data-visualization-dashboard-performance-and-usability",
+    "track": "Data Visualization",
+    "title": "Dashboard performance and usability",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/data-visualization-dashboard-performance-and-usability.json"
+  },
+  {
+    "id": "software-engineering-git-and-collaborative-version-control",
+    "track": "Software Engineering",
+    "title": "Git and collaborative version control",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/software-engineering-git-and-collaborative-version-control.json"
+  },
+  {
+    "id": "software-engineering-command-line-and-environments",
+    "track": "Software Engineering",
+    "title": "Command line and environments",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/software-engineering-command-line-and-environments.json"
+  },
+  {
+    "id": "software-engineering-debugging-and-logging",
+    "track": "Software Engineering",
+    "title": "Debugging and logging",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/software-engineering-debugging-and-logging.json"
+  },
+  {
+    "id": "software-engineering-unit-and-integration-testing",
+    "track": "Software Engineering",
+    "title": "Unit and integration testing",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/software-engineering-unit-and-integration-testing.json"
+  },
+  {
+    "id": "software-engineering-apis-and-json",
+    "track": "Software Engineering",
+    "title": "APIs and JSON",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/software-engineering-apis-and-json.json"
+  },
+  {
+    "id": "software-engineering-code-organization-and-documentation",
+    "track": "Software Engineering",
+    "title": "Code organization and documentation",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/software-engineering-code-organization-and-documentation.json"
+  },
+  {
+    "id": "software-engineering-ci-cd-fundamentals",
+    "track": "Software Engineering",
+    "title": "CI/CD fundamentals",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/software-engineering-ci-cd-fundamentals.json"
+  },
+  {
+    "id": "deep-learning-and-nlp-neural-network-fundamentals",
+    "track": "Deep Learning and NLP",
+    "title": "Neural network fundamentals",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/deep-learning-and-nlp-neural-network-fundamentals.json"
+  },
+  {
+    "id": "deep-learning-and-nlp-backpropagation-intuition",
+    "track": "Deep Learning and NLP",
+    "title": "Backpropagation intuition",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/deep-learning-and-nlp-backpropagation-intuition.json"
+  },
+  {
+    "id": "deep-learning-and-nlp-pytorch-training-loops",
+    "track": "Deep Learning and NLP",
+    "title": "PyTorch training loops",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/deep-learning-and-nlp-pytorch-training-loops.json"
+  },
+  {
+    "id": "deep-learning-and-nlp-embeddings-and-vector-representations",
+    "track": "Deep Learning and NLP",
+    "title": "Embeddings and vector representations",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/deep-learning-and-nlp-embeddings-and-vector-representations.json"
+  },
+  {
+    "id": "deep-learning-and-nlp-natural-language-processing-basics",
+    "track": "Deep Learning and NLP",
+    "title": "Natural language processing basics",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/deep-learning-and-nlp-natural-language-processing-basics.json"
+  },
+  {
+    "id": "deep-learning-and-nlp-transformers-and-attention",
+    "track": "Deep Learning and NLP",
+    "title": "Transformers and attention",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/deep-learning-and-nlp-transformers-and-attention.json"
+  },
+  {
+    "id": "deep-learning-and-nlp-llm-evaluation-and-responsible-use",
+    "track": "Deep Learning and NLP",
+    "title": "LLM evaluation and responsible use",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/deep-learning-and-nlp-llm-evaluation-and-responsible-use.json"
+  },
+  {
+    "id": "time-series-and-forecasting-time-series-decomposition",
+    "track": "Time Series and Forecasting",
+    "title": "Time series decomposition",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/time-series-and-forecasting-time-series-decomposition.json"
+  },
+  {
+    "id": "time-series-and-forecasting-trend-seasonality-and-stationarity",
+    "track": "Time Series and Forecasting",
+    "title": "Trend seasonality and stationarity",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/time-series-and-forecasting-trend-seasonality-and-stationarity.json"
+  },
+  {
+    "id": "time-series-and-forecasting-forecast-baselines-and-backtesting",
+    "track": "Time Series and Forecasting",
+    "title": "Forecast baselines and backtesting",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/time-series-and-forecasting-forecast-baselines-and-backtesting.json"
+  },
+  {
+    "id": "time-series-and-forecasting-arima-and-exponential-smoothing",
+    "track": "Time Series and Forecasting",
+    "title": "ARIMA and exponential smoothing",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/time-series-and-forecasting-arima-and-exponential-smoothing.json"
+  },
+  {
+    "id": "time-series-and-forecasting-forecast-accuracy-and-uncertainty",
+    "track": "Time Series and Forecasting",
+    "title": "Forecast accuracy and uncertainty",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/time-series-and-forecasting-forecast-accuracy-and-uncertainty.json"
+  },
+  {
+    "id": "ethics-and-responsible-data-science-privacy-and-sensitive-data-handling",
+    "track": "Ethics and Responsible Data Science",
+    "title": "Privacy and sensitive data handling",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/ethics-and-responsible-data-science-privacy-and-sensitive-data-handling.json"
+  },
+  {
+    "id": "ethics-and-responsible-data-science-fairness-and-bias-in-data-and-models",
+    "track": "Ethics and Responsible Data Science",
+    "title": "Fairness and bias in data and models",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/ethics-and-responsible-data-science-fairness-and-bias-in-data-and-models.json"
+  },
+  {
+    "id": "ethics-and-responsible-data-science-reproducibility-and-research-integrity",
+    "track": "Ethics and Responsible Data Science",
+    "title": "Reproducibility and research integrity",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/ethics-and-responsible-data-science-reproducibility-and-research-integrity.json"
+  },
+  {
+    "id": "ethics-and-responsible-data-science-model-governance-and-documentation",
+    "track": "Ethics and Responsible Data Science",
+    "title": "Model governance and documentation",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/ethics-and-responsible-data-science-model-governance-and-documentation.json"
+  },
+  {
+    "id": "ethics-and-responsible-data-science-communicating-uncertainty-and-limitations",
+    "track": "Ethics and Responsible Data Science",
+    "title": "Communicating uncertainty and limitations",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/ethics-and-responsible-data-science-communicating-uncertainty-and-limitations.json"
+  },
+  {
+    "id": "career-and-research-practice-framing-analytical-questions",
+    "track": "Career and Research Practice",
+    "title": "Framing analytical questions",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/career-and-research-practice-framing-analytical-questions.json"
+  },
+  {
+    "id": "career-and-research-practice-literature-review-and-source-evaluation",
+    "track": "Career and Research Practice",
+    "title": "Literature review and source evaluation",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/career-and-research-practice-literature-review-and-source-evaluation.json"
+  },
+  {
+    "id": "career-and-research-practice-writing-technical-case-studies",
+    "track": "Career and Research Practice",
+    "title": "Writing technical case studies",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/career-and-research-practice-writing-technical-case-studies.json"
+  },
+  {
+    "id": "career-and-research-practice-portfolio-project-design",
+    "track": "Career and Research Practice",
+    "title": "Portfolio project design",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/career-and-research-practice-portfolio-project-design.json"
+  },
+  {
+    "id": "career-and-research-practice-stakeholder-communication-and-decision-making",
+    "track": "Career and Research Practice",
+    "title": "Stakeholder communication and decision-making",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/career-and-research-practice-stakeholder-communication-and-decision-making.json"
+  },
+  {
+    "id": "sql-recursive-ctes",
+    "track": "SQL",
+    "title": "Recursive CTEs",
+    "order": 10,
+    "status": "planned",
+    "file": "lessons/sql-recursive-ctes.json"
+  },
+  {
+    "id": "sql-subqueries-and-exists",
+    "track": "SQL",
+    "title": "Subqueries and EXISTS",
+    "order": 11,
+    "status": "planned",
+    "file": "lessons/sql-subqueries-and-exists.json"
+  },
+  {
+    "id": "sql-set-operations-and-null-semantics",
+    "track": "SQL",
+    "title": "Set operations and NULL semantics",
+    "order": 12,
+    "status": "planned",
+    "file": "lessons/sql-set-operations-and-null-semantics.json"
+  },
+  {
+    "id": "sql-transactions-and-isolation-levels",
+    "track": "SQL",
+    "title": "Transactions and isolation levels",
+    "order": 13,
+    "status": "planned",
+    "file": "lessons/sql-transactions-and-isolation-levels.json"
+  },
+  {
+    "id": "sql-query-optimization-and-sargability",
+    "track": "SQL",
+    "title": "Query optimization and SARGability",
+    "order": 14,
+    "status": "planned",
+    "file": "lessons/sql-query-optimization-and-sargability.json"
+  },
+  {
+    "id": "sql-views-and-stored-procedures",
+    "track": "SQL",
+    "title": "Views and stored procedures",
+    "order": 15,
+    "status": "planned",
+    "file": "lessons/sql-views-and-stored-procedures.json"
+  },
+  {
+    "id": "sql-data-modeling-and-dimensional-schemas",
+    "track": "SQL",
+    "title": "Data modeling and dimensional schemas",
+    "order": 16,
+    "status": "planned",
+    "file": "lessons/sql-data-modeling-and-dimensional-schemas.json"
+  },
+  {
+    "id": "python-numpy-arrays-and-broadcasting",
+    "track": "Python",
+    "title": "NumPy arrays and broadcasting",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/python-numpy-arrays-and-broadcasting.json"
+  },
+  {
+    "id": "python-file-handling-and-json",
+    "track": "Python",
+    "title": "File handling and JSON",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/python-file-handling-and-json.json"
+  },
+  {
+    "id": "python-type-hints-and-dataclasses",
+    "track": "Python",
+    "title": "Type hints and dataclasses",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/python-type-hints-and-dataclasses.json"
+  },
+  {
+    "id": "python-apis-with-requests",
+    "track": "Python",
+    "title": "APIs with requests",
+    "order": 10,
+    "status": "planned",
+    "file": "lessons/python-apis-with-requests.json"
+  },
+  {
+    "id": "python-debugging-and-profiling",
+    "track": "Python",
+    "title": "Debugging and profiling",
+    "order": 11,
+    "status": "planned",
+    "file": "lessons/python-debugging-and-profiling.json"
+  },
+  {
+    "id": "python-sql-connections-and-data-pipelines",
+    "track": "Python",
+    "title": "SQL connections and data pipelines",
+    "order": 12,
+    "status": "planned",
+    "file": "lessons/python-sql-connections-and-data-pipelines.json"
+  },
+  {
+    "id": "statistics-probability-distributions",
+    "track": "Statistics",
+    "title": "Probability distributions",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/statistics-probability-distributions.json"
+  },
+  {
+    "id": "statistics-anova-and-multiple-comparisons",
+    "track": "Statistics",
+    "title": "ANOVA and multiple comparisons",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/statistics-anova-and-multiple-comparisons.json"
+  },
+  {
+    "id": "statistics-logistic-regression",
+    "track": "Statistics",
+    "title": "Logistic regression",
+    "order": 10,
+    "status": "planned",
+    "file": "lessons/statistics-logistic-regression.json"
+  },
+  {
+    "id": "statistics-model-assumptions-and-diagnostics",
+    "track": "Statistics",
+    "title": "Model assumptions and diagnostics",
+    "order": 11,
+    "status": "planned",
+    "file": "lessons/statistics-model-assumptions-and-diagnostics.json"
+  },
+  {
+    "id": "statistics-bootstrap-and-permutation-tests",
+    "track": "Statistics",
+    "title": "Bootstrap and permutation tests",
+    "order": 12,
+    "status": "planned",
+    "file": "lessons/statistics-bootstrap-and-permutation-tests.json"
+  },
+  {
+    "id": "statistics-missing-data-mechanisms",
+    "track": "Statistics",
+    "title": "Missing data mechanisms",
+    "order": 13,
+    "status": "planned",
+    "file": "lessons/statistics-missing-data-mechanisms.json"
+  },
+  {
+    "id": "statistics-bayesian-inference",
+    "track": "Statistics",
+    "title": "Bayesian inference",
+    "order": 14,
+    "status": "planned",
+    "file": "lessons/statistics-bayesian-inference.json"
+  },
+  {
+    "id": "machine-learning-regularization-and-hyperparameter-tuning",
+    "track": "Machine Learning",
+    "title": "Regularization and hyperparameter tuning",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/machine-learning-regularization-and-hyperparameter-tuning.json"
+  },
+  {
+    "id": "machine-learning-tree-models-and-ensembles",
+    "track": "Machine Learning",
+    "title": "Tree models and ensembles",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/machine-learning-tree-models-and-ensembles.json"
+  },
+  {
+    "id": "machine-learning-class-imbalance-and-calibration",
+    "track": "Machine Learning",
+    "title": "Class imbalance and calibration",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/machine-learning-class-imbalance-and-calibration.json"
+  },
+  {
+    "id": "machine-learning-unsupervised-learning-and-clustering",
+    "track": "Machine Learning",
+    "title": "Unsupervised learning and clustering",
+    "order": 10,
+    "status": "planned",
+    "file": "lessons/machine-learning-unsupervised-learning-and-clustering.json"
+  },
+  {
+    "id": "machine-learning-model-fairness-and-robustness",
+    "track": "Machine Learning",
+    "title": "Model fairness and robustness",
+    "order": 11,
+    "status": "planned",
+    "file": "lessons/machine-learning-model-fairness-and-robustness.json"
+  },
+  {
+    "id": "product-analytics-metric-trees-and-north-star-metrics",
+    "track": "Product Analytics",
+    "title": "Metric trees and north star metrics",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/product-analytics-metric-trees-and-north-star-metrics.json"
+  },
+  {
+    "id": "product-analytics-funnel-analysis",
+    "track": "Product Analytics",
+    "title": "Funnel analysis",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/product-analytics-funnel-analysis.json"
+  },
+  {
+    "id": "product-analytics-retention-and-cohort-analysis",
+    "track": "Product Analytics",
+    "title": "Retention and cohort analysis",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/product-analytics-retention-and-cohort-analysis.json"
+  },
+  {
+    "id": "product-analytics-segmentation-and-behavioral-analysis",
+    "track": "Product Analytics",
+    "title": "Segmentation and behavioral analysis",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/product-analytics-segmentation-and-behavioral-analysis.json"
+  },
+  {
+    "id": "product-analytics-stakeholder-metric-definitions",
+    "track": "Product Analytics",
+    "title": "Stakeholder metric definitions",
+    "order": 10,
+    "status": "planned",
+    "file": "lessons/product-analytics-stakeholder-metric-definitions.json"
+  },
+  {
+    "id": "experimentation-randomization-and-validity",
+    "track": "Experimentation",
+    "title": "Randomization and validity",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/experimentation-randomization-and-validity.json"
+  },
+  {
+    "id": "experimentation-sequential-testing-and-peeking",
+    "track": "Experimentation",
+    "title": "Sequential testing and peeking",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/experimentation-sequential-testing-and-peeking.json"
+  },
+  {
+    "id": "experimentation-variance-reduction-and-cuped",
+    "track": "Experimentation",
+    "title": "Variance reduction and CUPED",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/experimentation-variance-reduction-and-cuped.json"
+  },
+  {
+    "id": "experimentation-quasi-experimental-designs",
+    "track": "Experimentation",
+    "title": "Quasi-experimental designs",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/experimentation-quasi-experimental-designs.json"
+  },
+  {
+    "id": "analytics-engineering-dbt-tests-and-documentation",
+    "track": "Analytics Engineering",
+    "title": "dbt tests and documentation",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-dbt-tests-and-documentation.json"
+  },
+  {
+    "id": "analytics-engineering-semantic-layers-and-metric-definitions",
+    "track": "Analytics Engineering",
+    "title": "Semantic layers and metric definitions",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-semantic-layers-and-metric-definitions.json"
+  },
+  {
+    "id": "analytics-engineering-slowly-changing-dimensions",
+    "track": "Analytics Engineering",
+    "title": "Slowly changing dimensions",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-slowly-changing-dimensions.json"
+  },
+  {
+    "id": "analytics-engineering-data-contracts-and-lineage",
+    "track": "Analytics Engineering",
+    "title": "Data contracts and lineage",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-data-contracts-and-lineage.json"
+  },
+  {
+    "id": "snowflake-snowflake-security-and-roles",
+    "track": "Snowflake",
+    "title": "Snowflake security and roles",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/snowflake-snowflake-security-and-roles.json"
+  },
+  {
+    "id": "snowflake-micro-partitions-and-pruning",
+    "track": "Snowflake",
+    "title": "Micro-partitions and pruning",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/snowflake-micro-partitions-and-pruning.json"
+  },
+  {
+    "id": "snowflake-streams-and-tasks",
+    "track": "Snowflake",
+    "title": "Streams and tasks",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/snowflake-streams-and-tasks.json"
+  },
+  {
+    "id": "snowflake-cost-and-warehouse-optimization",
+    "track": "Snowflake",
+    "title": "Cost and warehouse optimization",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/snowflake-cost-and-warehouse-optimization.json"
+  },
+  {
+    "id": "mlops-and-ai-feature-stores-and-model-registries",
+    "track": "MLOps and AI",
+    "title": "Feature stores and model registries",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-feature-stores-and-model-registries.json"
+  },
+  {
+    "id": "mlops-and-ai-online-versus-batch-inference",
+    "track": "MLOps and AI",
+    "title": "Online versus batch inference",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-online-versus-batch-inference.json"
+  },
+  {
+    "id": "mlops-and-ai-model-retraining-strategies",
+    "track": "MLOps and AI",
+    "title": "Model retraining strategies",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-model-retraining-strategies.json"
   }
 ]

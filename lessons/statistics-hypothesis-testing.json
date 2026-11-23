@@ -37,5 +37,28 @@
     ],
     "correct": 0,
     "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  },
+  "objectives": [
+    "Define null and alternative hypotheses",
+    "Interpret p-values under the null",
+    "Separate statistical from practical significance"
+  ],
+  "common_mistakes": [
+    "Reading a p-value as the probability the null is true",
+    "Choosing hypotheses after seeing the result",
+    "Ignoring multiplicity across many tests"
+  ],
+  "study_prompt": "Without looking at the reference solution, explain when you would use hypothesis testing, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "deep_dive": {
+    "heading": "What a p-value does—and does not—say",
+    "paragraphs": [
+      "A p-value is the probability, assuming the null hypothesis and model assumptions hold, of obtaining a test statistic at least as extreme as the observed statistic.",
+      "It is not the probability the null hypothesis is true, and it is not the size of the effect. Report the effect estimate and confidence interval alongside it.",
+      "Define the outcome, comparison, test and significance threshold before looking at results. Repeated testing without adjustment inflates the chance of false positives."
+    ],
+    "questions": [
+      "Can a tiny effect be statistically significant with a huge sample?",
+      "What additional information would you report alongside p = 0.03?"
+    ]
   }
 }

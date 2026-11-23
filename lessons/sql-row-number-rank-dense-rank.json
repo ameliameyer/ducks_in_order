@@ -38,5 +38,16 @@
     ],
     "correct": 0,
     "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
-  }
+  },
+  "objectives": [
+    "Distinguish unique row numbering from ranking with ties",
+    "Select top rows per group with a deterministic tie-breaker",
+    "Predict gaps after tied ranks"
+  ],
+  "common_mistakes": [
+    "Using ROW_NUMBER without a stable tie-breaker",
+    "Expecting DENSE_RANK to leave gaps",
+    "Assuming RANK always yields one row per group"
+  ],
+  "study_prompt": "Without looking at the reference solution, explain when you would use row_number, rank, dense_rank, reproduce the example on a different dataset, and identify one situation where the method could mislead."
 }
