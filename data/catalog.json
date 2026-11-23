@@ -1,0 +1,418 @@
+[
+  {
+    "id": "sql-ctes",
+    "track": "SQL",
+    "title": "CTEs",
+    "order": 1,
+    "status": "ready",
+    "file": "lessons/sql-ctes.json"
+  },
+  {
+    "id": "sql-window-functions-and-over",
+    "track": "SQL",
+    "title": "Window functions and OVER",
+    "order": 2,
+    "status": "ready",
+    "file": "lessons/sql-window-functions-and-over.json"
+  },
+  {
+    "id": "sql-row-number-rank-dense-rank",
+    "track": "SQL",
+    "title": "ROW_NUMBER, RANK, DENSE_RANK",
+    "order": 3,
+    "status": "ready",
+    "file": "lessons/sql-row-number-rank-dense-rank.json"
+  },
+  {
+    "id": "sql-lag-and-lead",
+    "track": "SQL",
+    "title": "LAG and LEAD",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/sql-lag-and-lead.json"
+  },
+  {
+    "id": "sql-conditional-aggregation",
+    "track": "SQL",
+    "title": "Conditional aggregation",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/sql-conditional-aggregation.json"
+  },
+  {
+    "id": "sql-date-and-cohort-analysis",
+    "track": "SQL",
+    "title": "Date and cohort analysis",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/sql-date-and-cohort-analysis.json"
+  },
+  {
+    "id": "sql-query-grain-and-join-duplication",
+    "track": "SQL",
+    "title": "Query grain and join duplication",
+    "order": 7,
+    "status": "planned",
+    "file": "lessons/sql-query-grain-and-join-duplication.json"
+  },
+  {
+    "id": "sql-execution-plans-and-indexes",
+    "track": "SQL",
+    "title": "Execution plans and indexes",
+    "order": 8,
+    "status": "planned",
+    "file": "lessons/sql-execution-plans-and-indexes.json"
+  },
+  {
+    "id": "sql-sql-dialect-portability",
+    "track": "SQL",
+    "title": "SQL dialect portability",
+    "order": 9,
+    "status": "planned",
+    "file": "lessons/sql-sql-dialect-portability.json"
+  },
+  {
+    "id": "python-functions-and-data-structures",
+    "track": "Python",
+    "title": "Functions and data structures",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/python-functions-and-data-structures.json"
+  },
+  {
+    "id": "python-pandas-filtering-and-grouping",
+    "track": "Python",
+    "title": "pandas filtering and grouping",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/python-pandas-filtering-and-grouping.json"
+  },
+  {
+    "id": "python-joins-and-missing-data",
+    "track": "Python",
+    "title": "Joins and missing data",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/python-joins-and-missing-data.json"
+  },
+  {
+    "id": "python-vectorization-and-performance",
+    "track": "Python",
+    "title": "Vectorization and performance",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/python-vectorization-and-performance.json"
+  },
+  {
+    "id": "python-visualization-and-eda",
+    "track": "Python",
+    "title": "Visualization and EDA",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/python-visualization-and-eda.json"
+  },
+  {
+    "id": "python-testing-and-packaging",
+    "track": "Python",
+    "title": "Testing and packaging",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/python-testing-and-packaging.json"
+  },
+  {
+    "id": "statistics-probability-and-distributions",
+    "track": "Statistics",
+    "title": "Probability and distributions",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/statistics-probability-and-distributions.json"
+  },
+  {
+    "id": "statistics-sampling-and-bias",
+    "track": "Statistics",
+    "title": "Sampling and bias",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/statistics-sampling-and-bias.json"
+  },
+  {
+    "id": "statistics-confidence-intervals",
+    "track": "Statistics",
+    "title": "Confidence intervals",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/statistics-confidence-intervals.json"
+  },
+  {
+    "id": "statistics-hypothesis-testing",
+    "track": "Statistics",
+    "title": "Hypothesis testing",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/statistics-hypothesis-testing.json"
+  },
+  {
+    "id": "statistics-linear-regression",
+    "track": "Statistics",
+    "title": "Linear regression",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/statistics-linear-regression.json"
+  },
+  {
+    "id": "statistics-statistical-power",
+    "track": "Statistics",
+    "title": "Statistical power",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/statistics-statistical-power.json"
+  },
+  {
+    "id": "product-analytics-north-star-and-guardrail-metrics",
+    "track": "Product Analytics",
+    "title": "North-star and guardrail metrics",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/product-analytics-north-star-and-guardrail-metrics.json"
+  },
+  {
+    "id": "product-analytics-funnels-and-activation",
+    "track": "Product Analytics",
+    "title": "Funnels and activation",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/product-analytics-funnels-and-activation.json"
+  },
+  {
+    "id": "product-analytics-retention-and-cohorts",
+    "track": "Product Analytics",
+    "title": "Retention and cohorts",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/product-analytics-retention-and-cohorts.json"
+  },
+  {
+    "id": "product-analytics-segmentation-and-metric-design",
+    "track": "Product Analytics",
+    "title": "Segmentation and metric design",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/product-analytics-segmentation-and-metric-design.json"
+  },
+  {
+    "id": "product-analytics-experiment-analysis",
+    "track": "Product Analytics",
+    "title": "Experiment analysis",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/product-analytics-experiment-analysis.json"
+  },
+  {
+    "id": "snowflake-warehouses-and-compute",
+    "track": "Snowflake",
+    "title": "Warehouses and compute",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/snowflake-warehouses-and-compute.json"
+  },
+  {
+    "id": "snowflake-loading-and-transforming-data",
+    "track": "Snowflake",
+    "title": "Loading and transforming data",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/snowflake-loading-and-transforming-data.json"
+  },
+  {
+    "id": "snowflake-semi-structured-data",
+    "track": "Snowflake",
+    "title": "Semi-structured data",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/snowflake-semi-structured-data.json"
+  },
+  {
+    "id": "snowflake-query-profiling-and-cost",
+    "track": "Snowflake",
+    "title": "Query profiling and cost",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/snowflake-query-profiling-and-cost.json"
+  },
+  {
+    "id": "snowflake-security-and-roles",
+    "track": "Snowflake",
+    "title": "Security and roles",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/snowflake-security-and-roles.json"
+  },
+  {
+    "id": "analytics-engineering-dimensional-modeling",
+    "track": "Analytics Engineering",
+    "title": "Dimensional modeling",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-dimensional-modeling.json"
+  },
+  {
+    "id": "analytics-engineering-dbt-models-and-refs",
+    "track": "Analytics Engineering",
+    "title": "dbt models and refs",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-dbt-models-and-refs.json"
+  },
+  {
+    "id": "analytics-engineering-tests-and-documentation",
+    "track": "Analytics Engineering",
+    "title": "Tests and documentation",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-tests-and-documentation.json"
+  },
+  {
+    "id": "analytics-engineering-incremental-models",
+    "track": "Analytics Engineering",
+    "title": "Incremental models",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-incremental-models.json"
+  },
+  {
+    "id": "analytics-engineering-git-and-ci",
+    "track": "Analytics Engineering",
+    "title": "Git and CI",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/analytics-engineering-git-and-ci.json"
+  },
+  {
+    "id": "experimentation-randomization-and-assignment",
+    "track": "Experimentation",
+    "title": "Randomization and assignment",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/experimentation-randomization-and-assignment.json"
+  },
+  {
+    "id": "experimentation-a-b-test-design",
+    "track": "Experimentation",
+    "title": "A/B test design",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/experimentation-a-b-test-design.json"
+  },
+  {
+    "id": "experimentation-power-and-sample-size",
+    "track": "Experimentation",
+    "title": "Power and sample size",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/experimentation-power-and-sample-size.json"
+  },
+  {
+    "id": "experimentation-multiple-comparisons",
+    "track": "Experimentation",
+    "title": "Multiple comparisons",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/experimentation-multiple-comparisons.json"
+  },
+  {
+    "id": "experimentation-causal-inference",
+    "track": "Experimentation",
+    "title": "Causal inference",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/experimentation-causal-inference.json"
+  },
+  {
+    "id": "machine-learning-baselines-and-train-test-splits",
+    "track": "Machine Learning",
+    "title": "Baselines and train-test splits",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/machine-learning-baselines-and-train-test-splits.json"
+  },
+  {
+    "id": "machine-learning-regression-and-classification",
+    "track": "Machine Learning",
+    "title": "Regression and classification",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/machine-learning-regression-and-classification.json"
+  },
+  {
+    "id": "machine-learning-feature-engineering-and-leakage",
+    "track": "Machine Learning",
+    "title": "Feature engineering and leakage",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/machine-learning-feature-engineering-and-leakage.json"
+  },
+  {
+    "id": "machine-learning-cross-validation",
+    "track": "Machine Learning",
+    "title": "Cross-validation",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/machine-learning-cross-validation.json"
+  },
+  {
+    "id": "machine-learning-model-evaluation",
+    "track": "Machine Learning",
+    "title": "Model evaluation",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/machine-learning-model-evaluation.json"
+  },
+  {
+    "id": "machine-learning-interpretability",
+    "track": "Machine Learning",
+    "title": "Interpretability",
+    "order": 6,
+    "status": "planned",
+    "file": "lessons/machine-learning-interpretability.json"
+  },
+  {
+    "id": "mlops-and-ai-reproducible-pipelines",
+    "track": "MLOps and AI",
+    "title": "Reproducible pipelines",
+    "order": 1,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-reproducible-pipelines.json"
+  },
+  {
+    "id": "mlops-and-ai-experiment-tracking",
+    "track": "MLOps and AI",
+    "title": "Experiment tracking",
+    "order": 2,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-experiment-tracking.json"
+  },
+  {
+    "id": "mlops-and-ai-deployment-and-monitoring",
+    "track": "MLOps and AI",
+    "title": "Deployment and monitoring",
+    "order": 3,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-deployment-and-monitoring.json"
+  },
+  {
+    "id": "mlops-and-ai-data-drift",
+    "track": "MLOps and AI",
+    "title": "Data drift",
+    "order": 4,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-data-drift.json"
+  },
+  {
+    "id": "mlops-and-ai-ai-assisted-analytics-verification",
+    "track": "MLOps and AI",
+    "title": "AI-assisted analytics verification",
+    "order": 5,
+    "status": "planned",
+    "file": "lessons/mlops-and-ai-ai-assisted-analytics-verification.json"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "concept": "A window function calculates a value across related rows while preserving individual rows. OVER defines the window; PARTITION BY defines groups and ORDER BY defines sequence.",
+  "example": "SELECT OrderID, CustomerID, Amount,\n       SUM(Amount) OVER (PARTITION BY CustomerID) AS CustomerTotal\nFROM Orders;",
+  "breakdown": [
+    "Each order remains a separate row.",
+    "PARTITION BY CustomerID creates a separate calculation group for each customer.",
+    "SUM(Amount) computes each customer\u2019s total and repeats it on that customer\u2019s order rows.",
+    "Unlike GROUP BY, the window does not collapse orders into one row per customer."
+  ],
+  "practice": "Return every order with a running total of Amount for that customer in OrderDate, OrderID order.",
+  "answer": "SELECT OrderID, CustomerID, OrderDate, Amount,\n       SUM(Amount) OVER (\n           PARTITION BY CustomerID\n           ORDER BY OrderDate, OrderID\n           ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n       ) AS RunningTotal\nFROM Orders;",
+  "takeaways": [
+    "Window functions preserve row detail.",
+    "PARTITION BY is optional; ORDER BY is needed for sequence-sensitive calculations.",
+    "Explicit ROWS frames make running-total intent clear."
+  ]
+}

@@ -1,23 +1,31 @@
-# Ducks In Order — GAJ
+# Ducks In Order — v2
 
-A personal GitHub Pages learning dashboard built from the visual design of the `home_` portfolio (HTML/CSS/JS, Montserrat, particles.js, duck favicon).
+A GitHub Pages learning hub reusing the portfolio visual theme.
 
-## Publish
-1. Create a **public** GitHub repository named `ducks-in-order`.
-2. Upload **the contents** of this folder to the repository root (not the enclosing folder).
-3. In **Settings → Pages**, choose **Deploy from a branch**, `main`, `/ (root)` and Save.
-4. Open `https://ameliameyer.github.io/ducks-in-order/` after deployment.
+## Publish / upgrade
 
-No changes to your existing `home_` repository are needed. An unlinked public Pages site is **not private**. Do not commit personal or employer-confidential data.
+Upload **all contents** of this ZIP to the root of the existing `ducks-in-order` repository, replacing same-named files and adding new ones. Do **not** create a second repository. GitHub Pages should remain set to `main` / `(root)`.
 
-## Updating progress
-- `data/skills.json`: change `score` from `null` to 0–4 **only after assessment**. Set `status`, `last_assessed` (YYYY-MM-DD), and optionally `evidence` with objects `{ "label": "SQL diagnostic", "url": "https://..." }`.
-- `data/roadmap.json`: update `status` and `completed` when phases are finished.
-- `data/notes.json`: add an entry for each new Markdown note with `title`, `category`, `file`, and `description`.
-- `notes/*.md`: write notes in Markdown. The lightweight reader supports headings, paragraphs, and fenced code; richer Markdown formatting can be added later.
+## What's available
+
+- Dashboard, roadmap, curriculum catalog, study guides, practice lab, notes, mastery tracker.
+- 9 learning tracks and a complete concept-level catalog.
+- Three fully written SQL lessons with examples, explanations, exercises, and reference answers. Other topics are **clearly labeled Planned**, not presented as finished lessons.
+- Lessons follow Concept → Example → Breakdown → Practice → Takeaways.
+- Existing skill scores remain unassessed.
+
+## Update content
+
+- `data/catalog.json`: all lesson titles and readiness flags.
+- `lessons/*.json`: fully written lesson content; add a new JSON file and change the matching catalog item from `planned` to `ready`.
+- `data/skills.json`: verified mastery scores (null means unassessed).
+- `data/roadmap.json`: curriculum phases.
+- `data/notes.json` and `notes/*.md`: personal notes.
+
+## Limitations
+
+This is a static website. Exercises are self-checked, not executed or graded. Text entered into the practice area is not saved to GitHub. There is no authentication; all content in a public repository and public GitHub Pages site is publicly accessible even if not linked from your portfolio. Never publish work/customer data or personal secrets.
 
 ## Local preview
-Run `python -m http.server 8000` in this folder, then visit `http://localhost:8000/`. Opening the HTML directly from disk will not load JSON data because browsers restrict `file://` fetches.
 
-## Version 1 boundaries
-This is a read-only dashboard, not a browser-based editor. Updating mastery scores requires editing JSON in GitHub. Search filters note titles, categories, and descriptions, not full note bodies. No quizzes or accounts yet.
+Run `python -m http.server 8000` from this directory, then visit `http://localhost:8000`. Opening HTML directly as `file://` may block JSON loading.

@@ -1,0 +1,18 @@
+{
+  "concept": "A Common Table Expression (CTE) is a named result set defined with WITH and used by the immediately following statement. It helps split a query into understandable steps; it is not automatically stored as a temporary table.",
+  "example": "WITH CustomerRevenue AS (\n    SELECT CustomerID, SUM(Amount) AS TotalRevenue\n    FROM Orders\n    GROUP BY CustomerID\n)\nSELECT CustomerID, TotalRevenue\nFROM CustomerRevenue\nWHERE TotalRevenue > 500;",
+  "breakdown": [
+    "WITH CustomerRevenue AS (...) gives the intermediate result a name.",
+    "Inside the parentheses, GROUP BY produces one row per CustomerID.",
+    "The following SELECT reads that result as if it were a table.",
+    "WHERE filters the aggregated totals after the CTE has produced them.",
+    "In SQL Server, put a semicolon before WITH if it follows another statement in the batch."
+  ],
+  "practice": "Write a CTE called MonthlyOrders that returns CustomerID, the first day of OrderDate\u2019s month as RevenueMonth, and SUM(Amount) as MonthlyRevenue. Then select only rows where MonthlyRevenue > 1000.",
+  "answer": "WITH MonthlyOrders AS (\n    SELECT CustomerID,\n           DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1) AS RevenueMonth,\n           SUM(Amount) AS MonthlyRevenue\n    FROM Orders\n    GROUP BY CustomerID, DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1)\n)\nSELECT *\nFROM MonthlyOrders\nWHERE MonthlyRevenue > 1000;",
+  "takeaways": [
+    "CTEs improve readability and support multi-step transformations.",
+    "A CTE is scoped to the immediately following statement.",
+    "CTEs do not inherently improve query speed."
+  ]
+}
