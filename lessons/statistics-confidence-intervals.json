@@ -48,5 +48,18 @@
     "Ignoring missing values, duplicate rows, or the unit of analysis",
     "Failing to validate results against a simpler baseline or hand calculation"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use confidence intervals, reproduce the example on a different dataset, and identify one situation where the method could mislead."
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
+  "deep_dive": {
+    "heading": "Interpretation, assumptions, and practical uncertainty",
+    "paragraphs": [
+      "A 95% confidence interval is produced by a procedure that covers the fixed population parameter in 95% of repeated samples under its assumptions. It is not a 95% probability statement about a fixed parameter after seeing this particular interval.",
+      "For a sample mean with approximately independent observations, the t interval uses sample standard deviation and a t critical value. For clustered observations such as repeated orders per customer, treating every order as independent understates uncertainty.",
+      "Distinguish statistical precision from practical significance: a narrow interval around a tiny effect may still be unimportant to the business."
+    ],
+    "questions": [
+      "Why is it incorrect to say there is a 95% chance the fixed mean is inside this observed interval?",
+      "How would repeated measures from the same customer change the analysis?"
+    ],
+    "code": "import scipy.stats as stats\nimport numpy as np\nx = np.array([8, 10, 11, 9, 12, 10], dtype=float)\nn = len(x)\nmean = x.mean()\nsem = stats.sem(x)\nci = stats.t.interval(0.95, df=n-1, loc=mean, scale=sem)\nprint(mean, ci)"
+  }
 }

@@ -48,5 +48,18 @@
     "Ignoring missing values, duplicate rows, or the unit of analysis",
     "Failing to validate results against a simpler baseline or hand calculation"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use query grain and join duplication, reproduce the example on a different dataset, and identify one situation where the method could mislead."
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
+  "deep_dive": {
+    "heading": "Diagnosing one-to-many join inflation",
+    "paragraphs": [
+      "Before joining, state the intended output grain in one sentence: one row per customer, case, invoice, or line item. A join between cases and case items produces multiple rows per case, which can inflate case-level amounts.",
+      "Diagnose multiplicity with COUNT(*) and COUNT(DISTINCT key) before and after each join. Aggregate child tables to the intended grain before joining when you need case-level measures.",
+      "DISTINCT is not a general repair: it may hide legitimate duplicate-looking transactions and cannot undo a duplicated SUM."
+    ],
+    "questions": [
+      "How would you detect cases with no items?",
+      "What is the expected row count after the join if Cases has one row per CaseID?"
+    ],
+    "code": "WITH ItemTotals AS (\n    SELECT CaseID, SUM(LineAmount) AS ItemRevenue\n    FROM CaseItems\n    GROUP BY CaseID\n)\nSELECT c.CaseID, c.CustomerID, i.ItemRevenue\nFROM Cases AS c\nLEFT JOIN ItemTotals AS i ON i.CaseID = c.CaseID;"
+  }
 }

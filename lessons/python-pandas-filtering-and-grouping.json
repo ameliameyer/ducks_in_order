@@ -53,18 +53,18 @@
     "Treating missing values as zeros without justification",
     "Forgetting groupby keys and index behavior"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use pandas filtering and grouping, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
   "deep_dive": {
-    "heading": "Keep the aggregation grain explicit",
+    "heading": "Avoiding silent grain and missing-value errors",
     "paragraphs": [
-      "A filtered DataFrame retains only rows satisfying a boolean mask. Use parentheses around each comparison when combining masks with & or |.",
-      "Groupby collapses the original row-level records into the chosen grouping keys. The as_index=False option returns keys as ordinary columns, which often simplifies downstream joins.",
-      "Validate the sum of group totals against the filtered input sum to catch dropped rows or unexpected missing grouping keys."
+      "Filtering before aggregation answers a different question from filtering after aggregation. To find customers with lifetime spend over $1,000, group first and filter the grouped result; filtering transactions over $1,000 first excludes smaller transactions.",
+      "Use validate='many_to_one' in merge when joining many orders to one customer. It raises an error if your lookup key is unexpectedly duplicated.",
+      "groupby excludes missing group keys by default; consider dropna=False if missing customer identifiers should be counted and audited."
     ],
-    "code": "active = orders.loc[(orders[\"status\"] == \"paid\") & (orders[\"amount\"] > 0)].copy()\nby_customer = active.groupby(\"customer_id\", as_index=False, dropna=False).agg(\n    revenue=(\"amount\", \"sum\"),\n    order_count=(\"order_id\", \"nunique\")\n)\nassert abs(by_customer[\"revenue\"].sum() - active[\"amount\"].sum()) < 1e-8",
     "questions": [
-      "Why use & instead of and?",
-      "Why might dropna=False matter for reconciliation?"
-    ]
+      "Why is filtering orders to amount > 1000 before groupby incorrect here?",
+      "What does the missing customer group tell you about data quality?"
+    ],
+    "code": "import pandas as pd\norders = pd.DataFrame({'customer':[1,1,2,None], 'amount':[700,400,300,50]})\nspend = orders.groupby('customer', dropna=False, as_index=False).agg(total=('amount','sum'), orders=('amount','size'))\nprint(spend.loc[spend['total'] > 1000])"
   }
 }

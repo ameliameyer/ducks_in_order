@@ -56,18 +56,18 @@
     "Extrapolating beyond observed x values",
     "Ignoring nonlinearity and influential points"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use linear regression, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
   "deep_dive": {
-    "heading": "From fitted line to trustworthy interpretation",
+    "heading": "Diagnostics, leakage, and interpretation",
     "paragraphs": [
-      "Ordinary least squares chooses coefficients that minimize the sum of squared residuals. The slope estimates the average change in predicted y per one-unit increase in x, conditional on the model.",
-      "Plot residuals against fitted values to inspect nonlinearity and changing variance. Check whether influential observations dominate the fitted line.",
-      "A predictive association is not automatically causal. Confounding, reverse causality and selection effects can all produce a slope without a causal effect."
+      "Regression coefficients describe conditional associations under the model, not automatically causal effects. Confounding, selection bias, and reverse causation can invalidate causal interpretations.",
+      "Inspect residual patterns, influential observations, and whether variance changes with fitted values. Use out-of-sample evaluation for prediction; do not report in-sample R² as a guarantee of future performance.",
+      "A feature calculated using information after the prediction timestamp is data leakage. For example, predicting a late shipment using its eventual delivery date makes evaluation misleading."
     ],
-    "code": "import statsmodels.api as sm\nX = sm.add_constant(df[[\"ad_spend\"]])\nmodel = sm.OLS(df[\"sales\"], X, missing=\"drop\").fit()\nprint(model.summary())\nprint(model.conf_int())",
     "questions": [
-      "How would you interpret a slope of 2.4 if spend is in dollars?",
-      "What residual pattern would make a straight-line model questionable?"
-    ]
+      "What would make a feature unavailable at prediction time?",
+      "Why does a high R² not prove the predictors cause the outcome?"
+    ],
+    "code": "import statsmodels.formula.api as smf\nmodel = smf.ols('days_to_ship ~ case_complexity + units', data=training_cases).fit()\nprint(model.summary())\n# Evaluate predictions on a held-out, later time period."
   }
 }

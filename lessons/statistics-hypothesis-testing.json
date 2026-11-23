@@ -48,17 +48,17 @@
     "Choosing hypotheses after seeing the result",
     "Ignoring multiplicity across many tests"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use hypothesis testing, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
   "deep_dive": {
-    "heading": "What a p-value does—and does not—say",
+    "heading": "Design decisions before p-values",
     "paragraphs": [
-      "A p-value is the probability, assuming the null hypothesis and model assumptions hold, of obtaining a test statistic at least as extreme as the observed statistic.",
-      "It is not the probability the null hypothesis is true, and it is not the size of the effect. Report the effect estimate and confidence interval alongside it.",
-      "Define the outcome, comparison, test and significance threshold before looking at results. Repeated testing without adjustment inflates the chance of false positives."
+      "Define the unit of randomization, primary outcome, minimum practically meaningful effect, and stopping rule before looking at results. Changing the metric after seeing outcomes can inflate false positives.",
+      "A p-value is the probability, assuming the null model and assumptions, of observing a statistic at least as extreme as the one obtained. It is not the probability the null hypothesis is true.",
+      "Report the estimated effect and uncertainty interval, not only whether p is below a threshold. Consider multiple comparisons when many metrics or segments are examined."
     ],
     "questions": [
-      "Can a tiny effect be statistically significant with a huge sample?",
-      "What additional information would you report alongside p = 0.03?"
+      "What would you pre-register for an experiment on invoice reminders?",
+      "Why is checking p-values daily and stopping at the first significant result problematic?"
     ]
   }
 }

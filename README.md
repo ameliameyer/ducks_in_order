@@ -54,3 +54,9 @@ Each lesson has Existing Notes and Add a New Note. Entries append rather than re
 - All 21 existing SQL, Python and Statistics lessons now have explicit objectives, common mistakes and transfer exercises; five key lessons have additional authored deep-dive explanations and examples. The original lesson content and existing notes/mastery storage are preserved.
 - New `projects.html`: add projects, choose any number of curriculum topic tags, update status, edit or delete projects, and export/import JSON. Data lives in browser localStorage until exported; committing an export to GitHub is manual.
 - Project backups are separate from notes and mastery backups. Existing v6 notes continue to use the same storage key.
+
+
+## Version 10 — Depth and cumulative assessments
+- Eight existing SQL, Python, and Statistics lessons gained expanded deep dives, practical code where appropriate, and diagnostic questions.
+- New Assessments page includes three realistic cross-topic scenarios with local draft autosave and revealable reference solutions. Assessments are self-reviewed; no execution or automatic grading.
+- Existing notes, projects, and mastery storage formats are unchanged. Export backups before updating.

@@ -52,5 +52,18 @@
     "Ignoring missing values, duplicate rows, or the unit of analysis",
     "Failing to validate results against a simpler baseline or hand calculation"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use joins and missing data, reproduce the example on a different dataset, and identify one situation where the method could mislead."
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
+  "deep_dive": {
+    "heading": "Join validation and missingness as evidence",
+    "paragraphs": [
+      "Missing values are not automatically zero. A missing invoice amount may mean not yet billed, a broken integration, or a genuine zero—each requires a different treatment.",
+      "Use merge(..., indicator=True, validate='many_to_one') to expose unmatched records and detect duplicate lookup keys.",
+      "Audit both match rate and business impact: unmatched orders may be few in number but large in revenue."
+    ],
+    "questions": [
+      "How would you distinguish a legitimate unknown customer from a broken join?",
+      "What metric would show whether unmatched rows are financially material?"
+    ],
+    "code": "merged = orders.merge(customers, on='customer_id', how='left', indicator=True, validate='many_to_one')\nprint(merged['_merge'].value_counts(dropna=False))\nprint(merged.loc[merged['_merge'] == 'left_only', 'amount'].sum())"
+  }
 }

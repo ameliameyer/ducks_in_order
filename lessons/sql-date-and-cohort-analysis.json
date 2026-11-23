@@ -48,5 +48,18 @@
     "Ignoring missing values, duplicate rows, or the unit of analysis",
     "Failing to validate results against a simpler baseline or hand calculation"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use date and cohort analysis, reproduce the example on a different dataset, and identify one situation where the method could mislead."
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
+  "deep_dive": {
+    "heading": "Building cohorts without look-ahead bias",
+    "paragraphs": [
+      "A cohort is defined by an entry event such as first purchase, not by the date of any later transaction. Derive each customer's first observed event, then compute month offsets for subsequent activity.",
+      "Retention denominators should be the number of customers in the original cohort, not the number active in a later month. Explicitly define whether month zero counts as retained.",
+      "Partial recent months can make retention appear worse. Compare only cohorts with complete observation windows or label the censoring."
+    ],
+    "questions": [
+      "How would you calculate retention percentages from this output?",
+      "Why can incomplete observation windows distort the latest cohorts?"
+    ],
+    "code": "WITH FirstOrder AS (\n    SELECT CustomerID, MIN(OrderDate) AS FirstOrderDate\n    FROM Orders GROUP BY CustomerID\n), Activity AS (\n    SELECT DISTINCT o.CustomerID,\n           DATEFROMPARTS(YEAR(f.FirstOrderDate), MONTH(f.FirstOrderDate), 1) AS CohortMonth,\n           DATEDIFF(MONTH, DATEFROMPARTS(YEAR(f.FirstOrderDate), MONTH(f.FirstOrderDate), 1), DATEFROMPARTS(YEAR(o.OrderDate), MONTH(o.OrderDate), 1)) AS MonthNumber\n    FROM Orders AS o JOIN FirstOrder AS f ON o.CustomerID = f.CustomerID\n)\nSELECT CohortMonth, MonthNumber, COUNT(*) AS ActiveCustomers\nFROM Activity GROUP BY CohortMonth, MonthNumber;"
+  }
 }

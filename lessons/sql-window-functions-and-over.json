@@ -49,18 +49,18 @@
     "Confusing windowed SUM with GROUP BY",
     "Forgetting the default frame can affect running totals"
   ],
-  "study_prompt": "Without looking at the reference solution, explain when you would use window functions and over, reproduce the example on a different dataset, and identify one situation where the method could mislead.",
+  "study_prompt": "Explain the assumptions behind this method, work through a new business example without copying the solution, and describe one validation check that would catch a plausible error.",
   "deep_dive": {
-    "heading": "Why the row grain stays intact",
+    "heading": "Window frames and why row counts do not collapse",
     "paragraphs": [
-      "GROUP BY collapses rows into one row per group. Window functions calculate over a partition while preserving the original detail rows.",
-      "PARTITION BY defines which rows belong together; ORDER BY defines the calculation sequence. For a running total, specify ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW to make the frame explicit.",
-      "If multiple rows share the same date, add a stable secondary sort key when the intended sequence requires it."
+      "GROUP BY collapses rows to a group grain; a window function keeps the input rows while calculating over a partition. This matters when you need each transaction alongside its customer's lifetime revenue.",
+      "ORDER BY inside OVER determines calculation order, not final display order. For running totals, specify ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW explicitly; the default RANGE frame can group tied sort values together.",
+      "Test windows with duplicate timestamps, NULL values, and customers with only one transaction."
     ],
-    "code": "SELECT CustomerID, OrderID, OrderDate, Amount,\n       SUM(Amount) OVER (\n           PARTITION BY CustomerID\n           ORDER BY OrderDate, OrderID\n           ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n       ) AS RunningRevenue\nFROM Orders;",
     "questions": [
-      "How many rows does this query return relative to Orders?",
-      "What happens if you remove PARTITION BY CustomerID?"
-    ]
+      "What changes if OrderID is omitted from the ordering?",
+      "Why does a window sum preserve individual orders while GROUP BY does not?"
+    ],
+    "code": "SELECT CustomerID, OrderID, OrderDate, Amount,\n       SUM(Amount) OVER (PARTITION BY CustomerID) AS CustomerTotal,\n       SUM(Amount) OVER (PARTITION BY CustomerID ORDER BY OrderDate, OrderID ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS RunningTotal\nFROM Orders;"
   }
 }

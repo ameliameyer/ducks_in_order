@@ -1,0 +1,20 @@
+[
+  {
+    "title": "SQL \u00b7 Revenue and retention audit",
+    "scenario": "Cases(CaseID, CustomerID, CreatedDate) has one row per case. CaseItems(CaseID, LineAmount) has multiple rows per case. Invoices(CaseID, InvoiceDate) may have multiple rows per case. Return monthly case counts and total item revenue by customer, without multiplying revenue due to invoices. Then explain how you would validate the output.",
+    "task": "Write a SQL Server query, state the result grain, and list at least three tests.",
+    "solution": "WITH CaseRevenue AS (\n    SELECT CaseID, SUM(LineAmount) AS Revenue\n    FROM CaseItems GROUP BY CaseID\n)\nSELECT c.CustomerID, DATEFROMPARTS(YEAR(c.CreatedDate), MONTH(c.CreatedDate), 1) AS CaseMonth,\n       COUNT(*) AS CaseCount, SUM(COALESCE(r.Revenue, 0)) AS TotalRevenue\nFROM Cases AS c\nLEFT JOIN CaseRevenue AS r ON r.CaseID = c.CaseID\nGROUP BY c.CustomerID, DATEFROMPARTS(YEAR(c.CreatedDate), MONTH(c.CreatedDate), 1);\n\nInvoices is intentionally excluded because it is not needed for the requested metrics. Validate uniqueness of Cases.CaseID; compare total CaseItems revenue to the joined result; inspect missing CaseItems; check a hand-calculated customer/month."
+  },
+  {
+    "title": "Python \u00b7 Data quality investigation",
+    "scenario": "You have orders(order_id, customer_id, amount) and customers(customer_id, region). Some orders have no matching customer and the customers file may contain duplicate IDs. Produce regional revenue, identify unmatched order revenue, and fail loudly on invalid lookup keys.",
+    "task": "Write pandas code and describe your handling of unknown regions.",
+    "solution": "assert customers[\"customer_id\"].is_unique, \"Duplicate customer lookup keys\"\nmerged = orders.merge(customers, on=\"customer_id\", how=\"left\", validate=\"many_to_one\", indicator=True)\nunmatched_revenue = merged.loc[merged[\"_merge\"] == \"left_only\", \"amount\"].sum()\nregional = merged.groupby(\"region\", dropna=False, as_index=False).agg(revenue=(\"amount\", \"sum\"))\nprint(regional, unmatched_revenue)\n\nKeep missing region visible rather than silently assigning it to a known region. Check that regional revenue sums to the original total, including unknown region."
+  },
+  {
+    "title": "Statistics \u00b7 Evaluate an intervention",
+    "scenario": "A support team introduced a new ticket triage workflow. Average resolution time decreased from 30 hours to 24 hours. The before period includes 120 tickets; the after period includes 150. You do not have standard deviations or information about ticket mix. Can you conclude the workflow caused the improvement? Design a stronger evaluation.",
+    "task": "Describe at least four missing pieces of evidence, a possible design, and how you would communicate uncertainty.",
+    "solution": "No causal conclusion follows from two averages. Need variation/distribution, ticket complexity and mix, time trends, seasonality, staffing, repeat tickets, and measurement consistency. Prefer randomized rollout if feasible; otherwise a controlled interrupted time series or difference-in-differences with assumptions checked. Define unit, primary metric, guardrails, and confidence intervals. The observed change is 6 hours (20%) descriptively, not proven attributable to the intervention."
+  }
+]
