@@ -1,0 +1,59 @@
+{
+  "concept": "The union rule P(A or B)=P(A)+P(B)-P(A and B) prevents counting overlap twice.",
+  "example": "Of 100 tickets, 40 are billing, 30 urgent and 12 both. P(billing OR urgent)=(40+30-12)/100=0.58.",
+  "breakdown": [
+    "Identify the population, outcomes and units before calculating.",
+    "Translate the scenario into the mathematical operation described in the concept.",
+    "Compute each intermediate quantity and check the denominator or dimensions.",
+    "Interpret the result in the original business context; check assumptions."
+  ],
+  "practice": "Of 200 cases, 90 late, 50 escalated and 20 both. Find P(late OR escalated) and P(neither).",
+  "answer": "(90+50-20)/200=0.60; P(neither)=0.40.",
+  "takeaways": [
+    "The union rule P(A or B)=P(A)+P(B)-P(A and B) prevents counting overlap twice.",
+    "Check whether assumptions and data grain match the question."
+  ],
+  "objectives": [
+    "Explain the core relationship",
+    "Reproduce the worked example",
+    "Solve a new scenario independently"
+  ],
+  "common_mistakes": [
+    "Confusing the denominator or the unit of analysis",
+    "Treating an illustrative example as causal evidence"
+  ],
+  "study_prompt": "Solve without notes, then explain the answer and one limitation.",
+  "deep_dive": {
+    "heading": "Apply this concept in analytics",
+    "paragraphs": [
+      "State the unit of analysis first: customer, transaction, ticket or time period. An incorrect denominator can produce a mathematically valid but misleading result.",
+      "Validate the result using a second approach, such as manual counts or a small Python calculation, before generalizing."
+    ],
+    "code": "Of 100 tickets, 40 are billing, 30 urgent and 12 both. P(billing OR urgent)=(40+30-12)/100=0.58.",
+    "questions": [
+      "What assumption is needed for this calculation?",
+      "What would change if the data contained duplicate records?"
+    ]
+  },
+  "resources": [
+    {
+      "title": "Penn State Online Statistics (written lessons)",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "What is the key principle in this lesson?",
+    "options": [
+      "The union rule P(A or B)=P(A)+P(B)-P(A and B) prevents counting overlap twice.",
+      "Always use the largest number as denominator.",
+      "One example proves causality.",
+      "Data quality never affects results."
+    ],
+    "correct": 0,
+    "explanation": "The union rule P(A or B)=P(A)+P(B)-P(A and B) prevents counting overlap twice."
+  }
+}

@@ -476,7 +476,7 @@
     "track": "Probability",
     "title": "Counting and probability rules",
     "order": 1,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/probability-counting-and-probability-rules.json"
   },
   {
@@ -484,7 +484,7 @@
     "track": "Probability",
     "title": "Conditional probability and Bayes theorem",
     "order": 2,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/probability-conditional-probability-and-bayes-theorem.json"
   },
   {
@@ -492,7 +492,7 @@
     "track": "Probability",
     "title": "Random variables and expected value",
     "order": 3,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/probability-random-variables-and-expected-value.json"
   },
   {

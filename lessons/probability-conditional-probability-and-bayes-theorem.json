@@ -1,0 +1,59 @@
+{
+  "concept": "Conditional probability changes the denominator: P(A|B)=P(A and B)/P(B). The reverse conditional generally differs.",
+  "example": "Of 1,000 orders, 100 are late. 60 late orders have complaints and 90 on-time orders have complaints. P(complaint|late)=60/100=60%; P(late|complaint)=60/150=40%.",
+  "breakdown": [
+    "Identify the population, outcomes and units before calculating.",
+    "Translate the scenario into the mathematical operation described in the concept.",
+    "Compute each intermediate quantity and check the denominator or dimensions.",
+    "Interpret the result in the original business context; check assumptions."
+  ],
+  "practice": "A fraud alert flags 90 of 100 fraudulent and 180 of 9,900 legitimate transactions. What fraction of alerts is truly fraud?",
+  "answer": "90/(90+180)=1/3, or 33.3%; 90% recall is not 90% precision.",
+  "takeaways": [
+    "Conditional probability changes the denominator: P(A|B)=P(A and B)/P(B). The reverse conditional generally differs.",
+    "Check whether assumptions and data grain match the question."
+  ],
+  "objectives": [
+    "Explain the core relationship",
+    "Reproduce the worked example",
+    "Solve a new scenario independently"
+  ],
+  "common_mistakes": [
+    "Confusing the denominator or the unit of analysis",
+    "Treating an illustrative example as causal evidence"
+  ],
+  "study_prompt": "Solve without notes, then explain the answer and one limitation.",
+  "deep_dive": {
+    "heading": "Apply this concept in analytics",
+    "paragraphs": [
+      "State the unit of analysis first: customer, transaction, ticket or time period. An incorrect denominator can produce a mathematically valid but misleading result.",
+      "Validate the result using a second approach, such as manual counts or a small Python calculation, before generalizing."
+    ],
+    "code": "Of 1,000 orders, 100 are late. 60 late orders have complaints and 90 on-time orders have complaints. P(complaint|late)=60/100=60%; P(late|complaint)=60/150=40%.",
+    "questions": [
+      "What assumption is needed for this calculation?",
+      "What would change if the data contained duplicate records?"
+    ]
+  },
+  "resources": [
+    {
+      "title": "Penn State Online Statistics (written lessons)",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "What is the key principle in this lesson?",
+    "options": [
+      "Conditional probability changes the denominator: P(A|B)=P(A and B)/P(B). The reverse conditional generally differs.",
+      "Always use the largest number as denominator.",
+      "One example proves causality.",
+      "Data quality never affects results."
+    ],
+    "correct": 0,
+    "explanation": "Conditional probability changes the denominator: P(A|B)=P(A and B)/P(B). The reverse conditional generally differs."
+  }
+}

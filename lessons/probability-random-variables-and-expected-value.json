@@ -1,0 +1,59 @@
+{
+  "concept": "Expected value is the probability-weighted average of outcomes, not the most likely outcome. E[X]=\u03a3xP(X=x).",
+  "example": "A customer spends $0 with probability .7, $100 with .2 and $300 with .1. Expected spend is $0+$20+$30=$50.",
+  "breakdown": [
+    "Identify the population, outcomes and units before calculating.",
+    "Translate the scenario into the mathematical operation described in the concept.",
+    "Compute each intermediate quantity and check the denominator or dimensions.",
+    "Interpret the result in the original business context; check assumptions."
+  ],
+  "practice": "Campaign revenue is $0 with probability .5, $40 with .3 and $200 with .2. Cost is $35. Find expected net.",
+  "answer": "Expected revenue is $52; expected net is $17.",
+  "takeaways": [
+    "Expected value is the probability-weighted average of outcomes, not the most likely outcome. E[X]=\u03a3xP(X=x).",
+    "Check whether assumptions and data grain match the question."
+  ],
+  "objectives": [
+    "Explain the core relationship",
+    "Reproduce the worked example",
+    "Solve a new scenario independently"
+  ],
+  "common_mistakes": [
+    "Confusing the denominator or the unit of analysis",
+    "Treating an illustrative example as causal evidence"
+  ],
+  "study_prompt": "Solve without notes, then explain the answer and one limitation.",
+  "deep_dive": {
+    "heading": "Apply this concept in analytics",
+    "paragraphs": [
+      "State the unit of analysis first: customer, transaction, ticket or time period. An incorrect denominator can produce a mathematically valid but misleading result.",
+      "Validate the result using a second approach, such as manual counts or a small Python calculation, before generalizing."
+    ],
+    "code": "A customer spends $0 with probability .7, $100 with .2 and $300 with .1. Expected spend is $0+$20+$30=$50.",
+    "questions": [
+      "What assumption is needed for this calculation?",
+      "What would change if the data contained duplicate records?"
+    ]
+  },
+  "resources": [
+    {
+      "title": "Penn State Online Statistics (written lessons)",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "What is the key principle in this lesson?",
+    "options": [
+      "Expected value is the probability-weighted average of outcomes, not the most likely outcome. E[X]=\u03a3xP(X=x).",
+      "Always use the largest number as denominator.",
+      "One example proves causality.",
+      "Data quality never affects results."
+    ],
+    "correct": 0,
+    "explanation": "Expected value is the probability-weighted average of outcomes, not the most likely outcome. E[X]=\u03a3xP(X=x)."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "concept": "A matrix organizes rows of observations and columns of features. Multiplying a feature matrix by weights produces one score per observation.",
+  "example": "X=[[2,100],[3,80]], weights=[10,0.1]. Scores are 2\u00d710+100\u00d7.1=30 and 3\u00d710+80\u00d7.1=38.",
+  "breakdown": [
+    "Identify the population, outcomes and units before calculating.",
+    "Translate the scenario into the mathematical operation described in the concept.",
+    "Compute each intermediate quantity and check the denominator or dimensions.",
+    "Interpret the result in the original business context; check assumptions."
+  ],
+  "practice": "Calculate Xw for X=[[4,50],[1,200]] and w=[5,0.2].",
+  "answer": "Scores are 30 and 45, a 2-element vector.",
+  "takeaways": [
+    "A matrix organizes rows of observations and columns of features. Multiplying a feature matrix by weights produces one score per observation.",
+    "Check whether assumptions and data grain match the question."
+  ],
+  "objectives": [
+    "Explain the core relationship",
+    "Reproduce the worked example",
+    "Solve a new scenario independently"
+  ],
+  "common_mistakes": [
+    "Confusing the denominator or the unit of analysis",
+    "Treating an illustrative example as causal evidence"
+  ],
+  "study_prompt": "Solve without notes, then explain the answer and one limitation.",
+  "deep_dive": {
+    "heading": "Apply this concept in analytics",
+    "paragraphs": [
+      "State the unit of analysis first: customer, transaction, ticket or time period. An incorrect denominator can produce a mathematically valid but misleading result.",
+      "Validate the result using a second approach, such as manual counts or a small Python calculation, before generalizing."
+    ],
+    "code": "X=[[2,100],[3,80]], weights=[10,0.1]. Scores are 2\u00d710+100\u00d7.1=30 and 3\u00d710+80\u00d7.1=38.",
+    "questions": [
+      "What assumption is needed for this calculation?",
+      "What would change if the data contained duplicate records?"
+    ]
+  },
+  "resources": [
+    {
+      "title": "MIT Linear Algebra course materials",
+      "url": "https://web.mit.edu/18.06/www/"
+    },
+    {
+      "title": "NumPy linear algebra reference",
+      "url": "https://numpy.org/doc/stable/reference/routines.linalg.html"
+    }
+  ],
+  "check": {
+    "question": "What is the key principle in this lesson?",
+    "options": [
+      "A matrix organizes rows of observations and columns of features. Multiplying a feature matrix by weights produces one score per observation.",
+      "Always use the largest number as denominator.",
+      "One example proves causality.",
+      "Data quality never affects results."
+    ],
+    "correct": 0,
+    "explanation": "A matrix organizes rows of observations and columns of features. Multiplying a feature matrix by weights produces one score per observation."
+  }
+}
