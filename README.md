@@ -39,3 +39,10 @@ Code samples are educational examples, not executed by the website. Verify again
 
 ## Version 6 — lesson notebook
 Each lesson has Existing Notes and Add a New Note. Entries append rather than replace earlier notes. Previous v5 notes migrate automatically in the same browser. Notes page offers JSON export and import (merging without duplicates). Upload exported `ducks-in-order-notes.json` to GitHub for backup; to restore, download and import it on Notes. Uploading alone does not sync the website automatically. Avoid private information in public repositories.
+
+
+## Version 7
+- Updated site-wide hero to My Learning Lab and removed GAJ.
+- Dashboard title and description updated.
+- Curriculum page explicitly titled Full Curriculum; Study Guides remains a separate lesson reader.
+- Bumped CSS/JS cache version to 7.
