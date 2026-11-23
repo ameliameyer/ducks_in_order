@@ -12,5 +12,30 @@
   "takeaways": [
     "Always state output grain before writing joins.",
     "Pre-aggregate separate fact tables to a common grain."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Microsoft: FROM and JOIN",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/from-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "title": "Microsoft Learn: T-SQL reference",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17"
+    },
+    {
+      "title": "SQLBolt: Interactive SQL lessons",
+      "url": "https://sqlbolt.com/"
+    }
+  ],
+  "check": {
+    "question": "Why can joining order headers to order lines inflate a header-level revenue total?",
+    "options": [
+      "Each header may be repeated once for every matching line.",
+      "LEFT JOIN automatically removes duplicate headers.",
+      "A join changes numeric values stored in the source table.",
+      "GROUP BY always preserves original row counts."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

@@ -12,5 +12,34 @@
   "takeaways": [
     "Index key order matters.",
     "Compare plans and IO before and after changes; test on representative data."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Microsoft: Execution plans",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17"
+    },
+    {
+      "title": "Microsoft: Index architecture",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17"
+    },
+    {
+      "title": "Microsoft Learn: T-SQL reference",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17"
+    },
+    {
+      "title": "SQLBolt: Interactive SQL lessons",
+      "url": "https://sqlbolt.com/"
+    }
+  ],
+  "check": {
+    "question": "What does an execution plan primarily describe?",
+    "options": [
+      "The operations SQL Server chooses to execute a query.",
+      "The exact SQL text originally typed by the user.",
+      "A guarantee that an index will improve every query.",
+      "A list of all future database transactions."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

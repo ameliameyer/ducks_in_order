@@ -12,5 +12,30 @@
   "takeaways": [
     "Statistical significance and effect size are different.",
     "Failing to reject is not proving no effect."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Penn State STAT 500: Applied statistics",
+      "url": "https://online.stat.psu.edu/stat500/"
+    },
+    {
+      "title": "Penn State online statistics courses",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "What does a p-value quantify under the null hypothesis?",
+    "options": [
+      "The probability of a result at least as extreme as observed, given the null and model assumptions.",
+      "The probability the null hypothesis is true.",
+      "The probability the alternative hypothesis is true.",
+      "The practical importance of the observed effect."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

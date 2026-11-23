@@ -12,5 +12,34 @@
   "takeaways": [
     "Inspect distributions before relying on averages.",
     "Do not delete outliers without domain justification."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "pandas: Visualization",
+      "url": "https://pandas.pydata.org/docs/user_guide/visualization.html"
+    },
+    {
+      "title": "Matplotlib: Tutorials",
+      "url": "https://matplotlib.org/stable/tutorials/index.html"
+    },
+    {
+      "title": "Official Python tutorial",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    {
+      "title": "Real Python: Written tutorials",
+      "url": "https://realpython.com/"
+    }
+  ],
+  "check": {
+    "question": "What is a primary goal of exploratory data analysis?",
+    "options": [
+      "Understand distributions, relationships, and potential data issues.",
+      "Prove causal relationships from any chart.",
+      "Guarantee future model accuracy.",
+      "Replace all data quality checks."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

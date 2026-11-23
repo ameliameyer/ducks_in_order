@@ -12,5 +12,34 @@
   "takeaways": [
     "Validate merge cardinality to avoid duplicated metrics.",
     "Missing, unknown, and zero can mean different things."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "pandas: Merge and join",
+      "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+    },
+    {
+      "title": "pandas: Working with missing data",
+      "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html"
+    },
+    {
+      "title": "Official Python tutorial",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    {
+      "title": "Real Python: Written tutorials",
+      "url": "https://realpython.com/"
+    }
+  ],
+  "check": {
+    "question": "Which pandas method is used for database-style joins?",
+    "options": [
+      "merge()",
+      "fillna()",
+      "sort_values()",
+      "describe()"
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

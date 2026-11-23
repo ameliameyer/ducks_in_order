@@ -12,5 +12,30 @@
   "takeaways": [
     "Confidence level describes the procedure’s long-run coverage.",
     "Narrow intervals do not guarantee unbiased sampling."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Penn State STAT 500: Applied statistics",
+      "url": "https://online.stat.psu.edu/stat500/"
+    },
+    {
+      "title": "Penn State online statistics courses",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "What is the correct frequentist interpretation of a 95% confidence procedure?",
+    "options": [
+      "Across repeated samples, about 95% of intervals constructed this way cover the fixed parameter.",
+      "There is a 95% probability the fixed parameter moves within this realized interval.",
+      "95% of individual observations must lie in the interval.",
+      "The sample estimate is correct 95% of the time."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

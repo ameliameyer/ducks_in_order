@@ -12,5 +12,30 @@
   "takeaways": [
     "Expected value need not be a possible outcome.",
     "Distinguish variability in individuals from uncertainty in an estimated mean."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Penn State STAT 414: Probability theory",
+      "url": "https://online.stat.psu.edu/stat414/"
+    },
+    {
+      "title": "Penn State online statistics courses",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "Which statement describes a probability distribution?",
+    "options": [
+      "It specifies probabilities for possible outcomes of a random variable.",
+      "It proves that observed patterns are causal.",
+      "It always has a bell-shaped curve.",
+      "It is the same as a confidence interval."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

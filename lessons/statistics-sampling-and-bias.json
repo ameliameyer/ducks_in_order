@@ -12,5 +12,30 @@
   "takeaways": [
     "Representativeness depends on selection and response mechanisms.",
     "Document who is missing from the data."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Penn State STAT 506: Sampling theory",
+      "url": "https://online.stat.psu.edu/stat506/"
+    },
+    {
+      "title": "Penn State online statistics courses",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "What is selection bias?",
+    "options": [
+      "A systematic distortion caused by how observations enter the sample.",
+      "Random variability that vanishes in every small sample.",
+      "The use of a larger sample than planned.",
+      "A model coefficient that equals zero."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

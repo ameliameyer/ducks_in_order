@@ -12,5 +12,34 @@
   "takeaways": [
     "Test boundary conditions and missing values.",
     "Keep transformations separate from IO when practical."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "pytest: Getting started",
+      "url": "https://docs.pytest.org/en/stable/getting-started.html"
+    },
+    {
+      "title": "Python Packaging User Guide",
+      "url": "https://packaging.python.org/en/latest/tutorials/packaging-projects/"
+    },
+    {
+      "title": "Official Python tutorial",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    {
+      "title": "Real Python: Written tutorials",
+      "url": "https://realpython.com/"
+    }
+  ],
+  "check": {
+    "question": "What is the purpose of an automated unit test?",
+    "options": [
+      "Check that a small unit of code behaves as expected.",
+      "Guarantee an application has no defects.",
+      "Publish a package automatically.",
+      "Make code execute faster by default."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

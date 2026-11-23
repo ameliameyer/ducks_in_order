@@ -4,7 +4,7 @@
   "breakdown": [
     "Each order remains a separate row.",
     "PARTITION BY CustomerID creates a separate calculation group for each customer.",
-    "SUM(Amount) computes each customer\u2019s total and repeats it on that customer\u2019s order rows.",
+    "SUM(Amount) computes each customer’s total and repeats it on that customer’s order rows.",
     "Unlike GROUP BY, the window does not collapse orders into one row per customer."
   ],
   "practice": "Return every order with a running total of Amount for that customer in OrderDate, OrderID order.",
@@ -13,5 +13,30 @@
     "Window functions preserve row detail.",
     "PARTITION BY is optional; ORDER BY is needed for sequence-sensitive calculations.",
     "Explicit ROWS frames make running-total intent clear."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Microsoft: OVER clause",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "title": "Microsoft Learn: T-SQL reference",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17"
+    },
+    {
+      "title": "SQLBolt: Interactive SQL lessons",
+      "url": "https://sqlbolt.com/"
+    }
+  ],
+  "check": {
+    "question": "What is a key distinction between a window function and GROUP BY?",
+    "options": [
+      "A window function can return a calculation while retaining individual rows.",
+      "Window functions always remove duplicate rows.",
+      "GROUP BY can never calculate sums.",
+      "Window functions require a temporary table."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

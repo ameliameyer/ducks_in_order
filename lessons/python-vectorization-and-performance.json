@@ -12,5 +12,34 @@
   "takeaways": [
     "Prefer column operations for straightforward numerical transformations.",
     "Measure performance before optimizing."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "NumPy: Absolute beginners",
+      "url": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+    },
+    {
+      "title": "pandas: Enhancing performance",
+      "url": "https://pandas.pydata.org/docs/user_guide/enhancingperf.html"
+    },
+    {
+      "title": "Official Python tutorial",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    {
+      "title": "Real Python: Written tutorials",
+      "url": "https://realpython.com/"
+    }
+  ],
+  "check": {
+    "question": "Why can vectorized array operations outperform Python row-by-row loops?",
+    "options": [
+      "They often execute optimized array operations outside the Python loop.",
+      "They always reduce memory usage to zero.",
+      "They automatically remove missing values.",
+      "They guarantee correct results without validation."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

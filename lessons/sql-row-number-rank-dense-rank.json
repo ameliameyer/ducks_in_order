@@ -13,5 +13,30 @@
     "Rank after deciding what each row represents.",
     "Use ROW_NUMBER for exactly N rows per group.",
     "Use RANK or DENSE_RANK when ties should share positions."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Microsoft: Ranking functions",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ranking-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "title": "Microsoft Learn: T-SQL reference",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17"
+    },
+    {
+      "title": "SQLBolt: Interactive SQL lessons",
+      "url": "https://sqlbolt.com/"
+    }
+  ],
+  "check": {
+    "question": "Which function assigns tied rows the same rank without gaps?",
+    "options": [
+      "DENSE_RANK()",
+      "ROW_NUMBER()",
+      "RANK()",
+      "COUNT()"
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

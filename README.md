@@ -16,3 +16,14 @@ Create `lessons/<id>.json` with fields `concept`, `example`, `breakdown` (array)
 
 ## Caveats
 Code samples are educational examples, not executed by the website. Verify against your own schema and environment. The website is public; do not paste confidential employer data.
+
+
+## Version 4 additions
+- Every ready lesson includes curated, free written resources (no video courses).
+- Each of 21 ready lessons includes a one-question, multiple-choice concept check with feedback.
+- Mark lessons complete and set a self-assessed 0–4 mastery score.
+- Save practice drafts locally; export/import JSON progress backups on Mastery page.
+- Progress uses browser localStorage, not GitHub or a backend; it does not sync across devices.
+- Concept checks grade predefined answers only. SQL/Python free-response exercises are **not** automatically executed or graded.
+- Do not upload a personal progress backup into the public GitHub repository.
+- Lesson content lives in lessons/*.json; resources are in each lesson's `resources` list.

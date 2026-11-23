@@ -13,5 +13,34 @@
   "takeaways": [
     "Filter order changes results: before grouping filters rows; after grouping filters groups.",
     "Check grain after every groupby."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "pandas: Group by",
+      "url": "https://pandas.pydata.org/docs/user_guide/groupby.html"
+    },
+    {
+      "title": "pandas: Indexing and selecting",
+      "url": "https://pandas.pydata.org/docs/user_guide/indexing.html"
+    },
+    {
+      "title": "Official Python tutorial",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    {
+      "title": "Real Python: Written tutorials",
+      "url": "https://realpython.com/"
+    }
+  ],
+  "check": {
+    "question": "What does pandas groupby generally help calculate?",
+    "options": [
+      "Aggregations for subsets of rows sharing grouping keys.",
+      "A guaranteed SQL index on a DataFrame.",
+      "A new file for every input row.",
+      "A permanent database table."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

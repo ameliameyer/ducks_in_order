@@ -12,5 +12,34 @@
   "takeaways": [
     "Prefer returning data over printing inside reusable functions.",
     "Test empty inputs and missing keys explicitly."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Python: Defining functions",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+    },
+    {
+      "title": "Python: Data structures",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html"
+    },
+    {
+      "title": "Official Python tutorial",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    {
+      "title": "Real Python: Written tutorials",
+      "url": "https://realpython.com/"
+    }
+  ],
+  "check": {
+    "question": "What does a Python function return when execution reaches RETURN value?",
+    "options": [
+      "The specified value is passed back to the caller.",
+      "The value is automatically printed to the console.",
+      "The function is permanently stored in memory.",
+      "The function restarts with the same arguments."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

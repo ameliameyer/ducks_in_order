@@ -12,5 +12,34 @@
   "takeaways": [
     "Learn portable concepts first; verify dialect-specific functions.",
     "Specify deterministic ordering when selecting top-N records."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Snowflake SQL command reference",
+      "url": "https://docs.snowflake.com/en/sql-reference"
+    },
+    {
+      "title": "PostgreSQL SQL reference",
+      "url": "https://www.postgresql.org/docs/current/sql.html"
+    },
+    {
+      "title": "Microsoft Learn: T-SQL reference",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17"
+    },
+    {
+      "title": "SQLBolt: Interactive SQL lessons",
+      "url": "https://sqlbolt.com/"
+    }
+  ],
+  "check": {
+    "question": "What is a common challenge when moving T-SQL to PostgreSQL or Snowflake?",
+    "options": [
+      "Functions and syntax can differ between SQL dialects.",
+      "SELECT is unsupported outside SQL Server.",
+      "All window functions must be removed.",
+      "Every SQL query must be rewritten in Python."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

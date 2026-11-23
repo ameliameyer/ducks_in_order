@@ -12,5 +12,30 @@
   "takeaways": [
     "Define cohort entry precisely; first observed order may not be first-ever order.",
     "Retention needs a clear activity definition and denominator."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Microsoft: Date and time functions",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "title": "Microsoft Learn: T-SQL reference",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17"
+    },
+    {
+      "title": "SQLBolt: Interactive SQL lessons",
+      "url": "https://sqlbolt.com/"
+    }
+  ],
+  "check": {
+    "question": "What defines a customer acquisition cohort?",
+    "options": [
+      "Customers grouped by the period they first became customers.",
+      "Customers sorted by their latest order amount.",
+      "Customers grouped by total lifetime revenue only.",
+      "All customers active in a single arbitrary month."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

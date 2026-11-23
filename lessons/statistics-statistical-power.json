@@ -12,5 +12,34 @@
   "takeaways": [
     "Plan sample size before analyzing outcomes.",
     "Low power can make meaningful effects hard to detect."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Penn State STAT 503: Design of experiments",
+      "url": "https://online.stat.psu.edu/stat503/"
+    },
+    {
+      "title": "statsmodels: Power and sample size",
+      "url": "https://www.statsmodels.org/stable/stats.html"
+    },
+    {
+      "title": "Penn State online statistics courses",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "What is statistical power?",
+    "options": [
+      "The probability of rejecting the null when a specified alternative is true.",
+      "The probability that the null hypothesis is true.",
+      "The observed p-value in a single test.",
+      "The probability that any statistically significant effect is large."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

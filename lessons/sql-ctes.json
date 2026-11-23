@@ -8,11 +8,36 @@
     "WHERE filters the aggregated totals after the CTE has produced them.",
     "In SQL Server, put a semicolon before WITH if it follows another statement in the batch."
   ],
-  "practice": "Write a CTE called MonthlyOrders that returns CustomerID, the first day of OrderDate\u2019s month as RevenueMonth, and SUM(Amount) as MonthlyRevenue. Then select only rows where MonthlyRevenue > 1000.",
+  "practice": "Write a CTE called MonthlyOrders that returns CustomerID, the first day of OrderDate’s month as RevenueMonth, and SUM(Amount) as MonthlyRevenue. Then select only rows where MonthlyRevenue > 1000.",
   "answer": "WITH MonthlyOrders AS (\n    SELECT CustomerID,\n           DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1) AS RevenueMonth,\n           SUM(Amount) AS MonthlyRevenue\n    FROM Orders\n    GROUP BY CustomerID, DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1)\n)\nSELECT *\nFROM MonthlyOrders\nWHERE MonthlyRevenue > 1000;",
   "takeaways": [
     "CTEs improve readability and support multi-step transformations.",
     "A CTE is scoped to the immediately following statement.",
     "CTEs do not inherently improve query speed."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Microsoft: WITH common table expression",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "title": "Microsoft Learn: T-SQL reference",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17"
+    },
+    {
+      "title": "SQLBolt: Interactive SQL lessons",
+      "url": "https://sqlbolt.com/"
+    }
+  ],
+  "check": {
+    "question": "Which statement best describes a nonrecursive CTE in SQL Server?",
+    "options": [
+      "A named query expression available to the statement immediately following it.",
+      "A table permanently stored in the database.",
+      "A query that always executes faster than a subquery.",
+      "A result that remains available for the entire session."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }

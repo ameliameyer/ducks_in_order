@@ -12,5 +12,38 @@
   "takeaways": [
     "Interpret coefficients conditionally and in units.",
     "Avoid extrapolating far beyond observed predictor values."
-  ]
+  ],
+  "resources": [
+    {
+      "title": "Penn State STAT 501: Regression methods",
+      "url": "https://online.stat.psu.edu/stat501/"
+    },
+    {
+      "title": "NIST: Process modeling and regression",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/pmd.htm"
+    },
+    {
+      "title": "statsmodels: Linear regression",
+      "url": "https://www.statsmodels.org/stable/regression.html"
+    },
+    {
+      "title": "Penn State online statistics courses",
+      "url": "https://online.stat.psu.edu/"
+    },
+    {
+      "title": "NIST Engineering Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/"
+    }
+  ],
+  "check": {
+    "question": "In ordinary least squares regression, what is minimized?",
+    "options": [
+      "The sum of squared residuals between observed and fitted values.",
+      "The sum of raw predictor values.",
+      "The number of predictors in every model.",
+      "The largest observed outcome value."
+    ],
+    "correct": 0,
+    "explanation": "Review the lesson overview and breakdown, then apply this distinction to the worked example."
+  }
 }
