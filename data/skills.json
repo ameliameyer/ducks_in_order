@@ -1,0 +1,142 @@
+[
+  {
+    "id": "s1",
+    "category": "SQL",
+    "name": "Window functions and ranking",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s2",
+    "category": "SQL",
+    "name": "CTEs and query grain",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s3",
+    "category": "SQL",
+    "name": "Execution plans and indexing",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s4",
+    "category": "Python",
+    "name": "pandas and data cleaning",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s5",
+    "category": "Python",
+    "name": "Functions and testing",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s6",
+    "category": "Statistics",
+    "name": "Confidence intervals and inference",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s7",
+    "category": "Statistics",
+    "name": "Regression and diagnostics",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s8",
+    "category": "Product analytics",
+    "name": "Funnels and retention",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s9",
+    "category": "Product analytics",
+    "name": "Experiment design",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s10",
+    "category": "Snowflake",
+    "name": "Warehouse architecture",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s11",
+    "category": "Analytics engineering",
+    "name": "dbt models and testing",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s12",
+    "category": "Machine learning",
+    "name": "Model evaluation and leakage",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s13",
+    "category": "MLOps",
+    "name": "Reproducibility and monitoring",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  },
+  {
+    "id": "s14",
+    "category": "AI-assisted analytics",
+    "name": "Verification and privacy",
+    "score": null,
+    "status": "Unassessed",
+    "last_assessed": null,
+    "evidence": [],
+    "notes": ""
+  }
+]

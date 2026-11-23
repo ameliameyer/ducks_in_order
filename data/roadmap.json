@@ -1,0 +1,51 @@
+[
+  {
+    "period": "Weeks 1\u20134",
+    "title": "Advanced SQL + Python",
+    "topics": "SQL window functions, query plans, pandas, functions and testing",
+    "status": "Not started",
+    "completed": false
+  },
+  {
+    "period": "Weeks 5\u20138",
+    "title": "Statistics + product analytics",
+    "topics": "Inference, regression, cohorts, funnels and KPI design",
+    "status": "Not started",
+    "completed": false
+  },
+  {
+    "period": "Weeks 9\u201314",
+    "title": "Snowflake + analytics engineering",
+    "topics": "Warehouse design, dimensional modeling, dbt and tests",
+    "status": "Not started",
+    "completed": false
+  },
+  {
+    "period": "Weeks 15\u201320",
+    "title": "Experimentation + causal inference",
+    "topics": "Randomization, power, guardrails and confounding",
+    "status": "Not started",
+    "completed": false
+  },
+  {
+    "period": "Weeks 21\u201332",
+    "title": "Applied machine learning",
+    "topics": "Classification, feature engineering, cross-validation and leakage",
+    "status": "Not started",
+    "completed": false
+  },
+  {
+    "period": "Weeks 33\u201344",
+    "title": "MLOps + AI-assisted analytics",
+    "topics": "Reproducibility, model tracking, drift and verification",
+    "status": "Not started",
+    "completed": false
+  },
+  {
+    "period": "Weeks 45\u201352",
+    "title": "Capstone + interviews",
+    "topics": "End-to-end capstone and technical interview practice",
+    "status": "Not started",
+    "completed": false
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "SQL: Query grain and joins",
+    "category": "SQL",
+    "file": "notes/sql-query-grain.md",
+    "description": "Why joins duplicate rows and how to validate aggregates."
+  },
+  {
+    "title": "Python: pandas fundamentals",
+    "category": "Python",
+    "file": "notes/python-pandas.md",
+    "description": "A practical refresher on DataFrames and transformations."
+  },
+  {
+    "title": "Statistics: Confidence intervals",
+    "category": "Statistics",
+    "file": "notes/statistics-confidence-intervals.md",
+    "description": "Interpretation, uncertainty, and common mistakes."
+  }
+]
