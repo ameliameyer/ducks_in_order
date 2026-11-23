@@ -1,0 +1,16 @@
+{
+  "concept": "Vectorized operations apply a calculation to an entire pandas Series rather than iterating through rows in Python. They are often faster and clearer.",
+  "example": "import pandas as pd\ndf = pd.DataFrame({\"amount\": [100, 200, 300], \"discount\": [0.1, 0.0, 0.2]})\ndf[\"net_amount\"] = df[\"amount\"] * (1 - df[\"discount\"])",
+  "breakdown": [
+    "Each column is a pandas Series.",
+    "The subtraction and multiplication happen elementwise.",
+    "The result becomes a new column without an explicit Python loop.",
+    "Benchmark on realistic data; vectorization is not automatically best for every operation."
+  ],
+  "practice": "Create a tax_amount column equal to 8% of net_amount and a final_amount column including tax.",
+  "answer": "df[\"tax_amount\"] = df[\"net_amount\"] * 0.08\ndf[\"final_amount\"] = df[\"net_amount\"] + df[\"tax_amount\"]",
+  "takeaways": [
+    "Prefer column operations for straightforward numerical transformations.",
+    "Measure performance before optimizing."
+  ]
+}

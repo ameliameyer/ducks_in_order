@@ -1,0 +1,16 @@
+{
+  "concept": "Automated tests verify expected behavior and catch regressions. Small pure functions are easier to test and reuse.",
+  "example": "def revenue_change(current, previous):\n    if previous is None:\n        return None\n    return current - previous\n\ndef test_revenue_change():\n    assert revenue_change(500, 300) == 200\n    assert revenue_change(500, None) is None",
+  "breakdown": [
+    "The function handles a normal input and an explicitly missing previous value.",
+    "Assertions compare actual and expected results.",
+    "pytest discovers functions named test_* in test files.",
+    "Tests should cover edge cases, not just the happy path."
+  ],
+  "practice": "Add a test for a negative revenue change and for equal current and previous values.",
+  "answer": "def test_revenue_change_edge_cases():\n    assert revenue_change(100, 300) == -200\n    assert revenue_change(300, 300) == 0",
+  "takeaways": [
+    "Test boundary conditions and missing values.",
+    "Keep transformations separate from IO when practical."
+  ]
+}

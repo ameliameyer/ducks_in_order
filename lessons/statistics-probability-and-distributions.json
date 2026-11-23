@@ -1,0 +1,16 @@
+{
+  "concept": "A probability distribution describes possible outcomes and their likelihoods. Mean summarizes center; variance and standard deviation describe spread.",
+  "example": "# Customer order count X has this probability distribution:\n# P(X=0)=0.2, P(X=1)=0.5, P(X=2)=0.3\n# E[X] = 0(0.2) + 1(0.5) + 2(0.3) = 1.1\n# E[X²] = 0²(0.2) + 1²(0.5) + 2²(0.3) = 1.7\n# Var(X) = 1.7 - 1.1² = 0.49",
+  "breakdown": [
+    "Probabilities sum to 1.",
+    "Expected value is a probability-weighted average.",
+    "Variance measures expected squared deviation from the mean.",
+    "Standard deviation is the square root of variance: 0.7 here."
+  ],
+  "practice": "For X with P(0)=0.5, P(2)=0.5, compute E[X] and Var(X).",
+  "answer": "E[X] = 0(0.5) + 2(0.5) = 1\nE[X²] = 0 + 4(0.5) = 2\nVar(X) = 2 - 1² = 1",
+  "takeaways": [
+    "Expected value need not be a possible outcome.",
+    "Distinguish variability in individuals from uncertainty in an estimated mean."
+  ]
+}

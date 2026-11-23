@@ -1,0 +1,16 @@
+{
+  "concept": "SQL dialects share core relational concepts but differ in functions, date handling, quoting, and query syntax. Translate intent rather than copying syntax blindly.",
+  "example": "-- SQL Server (T-SQL)\nSELECT TOP (5) CustomerID, Amount\nFROM Orders\nORDER BY Amount DESC;\n\n-- PostgreSQL / Snowflake\nSELECT CustomerID, Amount\nFROM Orders\nORDER BY Amount DESC\nLIMIT 5;",
+  "breakdown": [
+    "Both queries select five highest-amount orders.",
+    "SQL Server uses TOP; PostgreSQL and Snowflake support LIMIT.",
+    "Without a unique tie-breaker, tied rows can make the chosen five nondeterministic.",
+    "DATEFROMPARTS and other date functions also require dialect-specific review."
+  ],
+  "practice": "Rewrite the SQL Server example to return the top five with deterministic ordering by Amount descending then OrderID ascending.",
+  "answer": "SELECT TOP (5) CustomerID, Amount\nFROM Orders\nORDER BY Amount DESC, OrderID ASC;",
+  "takeaways": [
+    "Learn portable concepts first; verify dialect-specific functions.",
+    "Specify deterministic ordering when selecting top-N records."
+  ]
+}

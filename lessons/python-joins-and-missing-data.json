@@ -1,0 +1,16 @@
+{
+  "concept": "merge combines DataFrames using keys. Missing values require deliberate handling: a missing metric is not always zero.",
+  "example": "import pandas as pd\ncustomers = pd.DataFrame({\"customer\": [1, 2, 3]})\norders = pd.DataFrame({\"customer\": [1, 1, 2], \"amount\": [500, 300, 600]})\nrevenue = orders.groupby(\"customer\", as_index=False)[\"amount\"].sum()\nresult = customers.merge(revenue, on=\"customer\", how=\"left\")\nresult[\"amount\"] = result[\"amount\"].fillna(0)",
+  "breakdown": [
+    "Group orders first so revenue has one row per customer.",
+    "how=\"left\" keeps all customers.",
+    "The unmatched customer gets NaN revenue.",
+    "fillna(0) is appropriate only because the business definition treats no orders as zero revenue."
+  ],
+  "practice": "Add an order_count column to revenue before merging, then fill missing revenue and count with zero.",
+  "answer": "revenue = orders.groupby(\"customer\", as_index=False).agg(\n    amount=(\"amount\", \"sum\"), order_count=(\"amount\", \"size\"))\nresult = customers.merge(revenue, on=\"customer\", how=\"left\")\nresult[[\"amount\", \"order_count\"]] = result[[\"amount\", \"order_count\"]].fillna(0)",
+  "takeaways": [
+    "Validate merge cardinality to avoid duplicated metrics.",
+    "Missing, unknown, and zero can mean different things."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "concept": "LAG and LEAD read values from another row in a defined ordering without a self-join. LAG looks backward; LEAD looks forward. They do not automatically mean previous calendar month.",
+  "example": "WITH Monthly AS (\n    SELECT CustomerID, DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1) AS RevenueMonth, SUM(Amount) AS Revenue\n    FROM Orders\n    GROUP BY CustomerID, DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1)\n)\nSELECT CustomerID, RevenueMonth, Revenue,\n       LAG(Revenue) OVER (PARTITION BY CustomerID ORDER BY RevenueMonth) AS PriorObservedRevenue\nFROM Monthly;",
+  "breakdown": [
+    "The CTE creates one row per customer and observed month.",
+    "PARTITION BY restarts the calculation for each customer.",
+    "ORDER BY determines which row is previous.",
+    "A missing February means March looks back to January; use a calendar table or month-aware self-join when you require the immediately preceding calendar month."
+  ],
+  "practice": "Modify the query to return the next observed month’s revenue with LEAD, alongside prior observed revenue.",
+  "answer": "WITH Monthly AS (\n    SELECT CustomerID, DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1) AS RevenueMonth, SUM(Amount) AS Revenue\n    FROM Orders\n    GROUP BY CustomerID, DATEFROMPARTS(YEAR(OrderDate), MONTH(OrderDate), 1)\n)\nSELECT CustomerID, RevenueMonth, Revenue,\n       LAG(Revenue) OVER (PARTITION BY CustomerID ORDER BY RevenueMonth) AS PriorObservedRevenue,\n       LEAD(Revenue) OVER (PARTITION BY CustomerID ORDER BY RevenueMonth) AS NextObservedRevenue\nFROM Monthly;",
+  "takeaways": [
+    "LAG and LEAD work on ordered rows, not calendar intervals.",
+    "Aggregate to the intended grain before using a window function."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "concept": "Sampling bias occurs when the observed sample systematically differs from the target population. More observations do not fix a biased selection process.",
+  "example": "# Survey design:\n# Goal: satisfaction of ALL customers\n# Sample: customers who opened a support ticket last week\n# Risk: ticket-openers may have different experiences than non-ticket-openers",
+  "breakdown": [
+    "Define the target population first.",
+    "Identify who had a chance to enter the sample.",
+    "Customers without tickets have zero inclusion probability here.",
+    "A large sample of ticket-openers still cannot automatically represent all customers."
+  ],
+  "practice": "Describe a better sampling strategy for estimating satisfaction across all active customers and one likely nonresponse bias.",
+  "answer": "Randomly sample from the full active-customer roster, not only support tickets.\nInvite selected customers with consistent outreach.\nCompare response rates by customer size or activity; dissatisfied customers may respond at different rates.",
+  "takeaways": [
+    "Representativeness depends on selection and response mechanisms.",
+    "Document who is missing from the data."
+  ]
+}

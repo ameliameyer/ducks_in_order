@@ -1,0 +1,17 @@
+{
+  "concept": "pandas DataFrames organize tabular data. Boolean filters select rows; groupby aggregates them at a chosen grain.",
+  "example": "import pandas as pd\norders = pd.DataFrame({\"customer\": [1, 1, 2], \"amount\": [500, 300, 600]})\nresult = (orders.loc[orders[\"amount\"] >= 300]\n          .groupby(\"customer\", as_index=False)\n          .agg(revenue=(\"amount\", \"sum\"), order_count=(\"amount\", \"size\")))\nprint(result)",
+  "breakdown": [
+    "DataFrame builds a two-column table.",
+    "loc applies a row filter before aggregation.",
+    "groupby creates one group per customer.",
+    "agg assigns names to summed revenue and row counts.",
+    "as_index=False leaves customer as a regular column."
+  ],
+  "practice": "Modify the code to keep only orders with amount > 400 and calculate average amount per customer.",
+  "answer": "result = (orders.loc[orders[\"amount\"] > 400]\n          .groupby(\"customer\", as_index=False)\n          .agg(avg_amount=(\"amount\", \"mean\")))",
+  "takeaways": [
+    "Filter order changes results: before grouping filters rows; after grouping filters groups.",
+    "Check grain after every groupby."
+  ]
+}

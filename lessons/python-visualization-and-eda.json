@@ -1,0 +1,16 @@
+{
+  "concept": "Exploratory data analysis (EDA) checks distributions, missingness, outliers, and relationships before drawing conclusions or fitting models.",
+  "example": "import pandas as pd\nimport matplotlib.pyplot as plt\ndf = pd.DataFrame({\"revenue\": [100, 120, 140, 160, 1000]})\nprint(df[\"revenue\"].describe())\nprint(df.isna().sum())\ndf[\"revenue\"].hist(bins=5)\nplt.xlabel(\"Revenue\")\nplt.show()",
+  "breakdown": [
+    "describe reports summary statistics, including median and quartiles.",
+    "isna().sum() counts missing values per column.",
+    "The histogram shows the shape of the distribution.",
+    "The 1000 value warrants investigation; it is not automatically an error."
+  ],
+  "practice": "Calculate the median and mean revenue and explain which is more affected by the high value.",
+  "answer": "print(df[\"revenue\"].median())  # 140.0\nprint(df[\"revenue\"].mean())    # 304.0\n# The mean is pulled upward by 1000; the median is more robust.",
+  "takeaways": [
+    "Inspect distributions before relying on averages.",
+    "Do not delete outliers without domain justification."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "concept": "Functions package reusable logic. Lists hold ordered items; dictionaries map keys to values. Choose structures that match the problem.",
+  "example": "orders = [{\"customer\": 1, \"amount\": 500}, {\"customer\": 1, \"amount\": 300}]\n\ndef revenue_by_customer(rows):\n    totals = {}\n    for row in rows:\n        customer = row[\"customer\"]\n        totals[customer] = totals.get(customer, 0) + row[\"amount\"]\n    return totals\n\nprint(revenue_by_customer(orders))  # {1: 800}",
+  "breakdown": [
+    "orders is a list of dictionaries, each representing one order.",
+    "The function accepts rows as an argument and creates a fresh totals dictionary.",
+    "get(customer, 0) returns zero for an unseen customer.",
+    "return makes the result available to the caller; print only displays it."
+  ],
+  "practice": "Write a function count_by_customer(rows) that returns the number of orders for each customer.",
+  "answer": "def count_by_customer(rows):\n    counts = {}\n    for row in rows:\n        key = row[\"customer\"]\n        counts[key] = counts.get(key, 0) + 1\n    return counts",
+  "takeaways": [
+    "Prefer returning data over printing inside reusable functions.",
+    "Test empty inputs and missing keys explicitly."
+  ]
+}

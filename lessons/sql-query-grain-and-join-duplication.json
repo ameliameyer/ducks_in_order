@@ -1,0 +1,16 @@
+{
+  "concept": "Grain is what one row represents. Joining two one-to-many tables can multiply rows and inflate sums unless you align the grain first.",
+  "example": "WITH OrderTotals AS (\n    SELECT CustomerID, SUM(Amount) AS Revenue\n    FROM Orders GROUP BY CustomerID\n), TicketTotals AS (\n    SELECT CustomerID, COUNT(*) AS TicketCount\n    FROM Tickets GROUP BY CustomerID\n)\nSELECT c.CustomerID, COALESCE(o.Revenue, 0) AS Revenue,\n       COALESCE(t.TicketCount, 0) AS TicketCount\nFROM Customers c\nLEFT JOIN OrderTotals o ON c.CustomerID = o.CustomerID\nLEFT JOIN TicketTotals t ON c.CustomerID = t.CustomerID;",
+  "breakdown": [
+    "Orders has one row per order; Tickets has one row per ticket.",
+    "Joining both raw tables on CustomerID multiplies matching order and ticket combinations.",
+    "Each CTE reduces a source to one row per customer.",
+    "The final joins preserve customer grain and avoid double counting."
+  ],
+  "practice": "Explain why a customer with 2 orders and 3 tickets could show 6 joined rows. Then write a query that counts orders and tickets separately.",
+  "answer": "WITH O AS (SELECT CustomerID, COUNT(*) AS OrderCount FROM Orders GROUP BY CustomerID),\nT AS (SELECT CustomerID, COUNT(*) AS TicketCount FROM Tickets GROUP BY CustomerID)\nSELECT c.CustomerID, COALESCE(O.OrderCount, 0) AS OrderCount,\n       COALESCE(T.TicketCount, 0) AS TicketCount\nFROM Customers c\nLEFT JOIN O ON c.CustomerID = O.CustomerID\nLEFT JOIN T ON c.CustomerID = T.CustomerID;",
+  "takeaways": [
+    "Always state output grain before writing joins.",
+    "Pre-aggregate separate fact tables to a common grain."
+  ]
+}

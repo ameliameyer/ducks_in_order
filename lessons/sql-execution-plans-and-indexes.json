@@ -1,0 +1,16 @@
+{
+  "concept": "An execution plan shows how SQL Server chooses to access and combine data. Indexes can accelerate selective lookups but have storage and write costs.",
+  "example": "CREATE INDEX IX_Orders_CustomerID_OrderDate\nON dbo.Orders (CustomerID, OrderDate)\nINCLUDE (Amount);\n\nSELECT OrderDate, Amount\nFROM dbo.Orders\nWHERE CustomerID = 42\n  AND OrderDate >= '2026-01-01';",
+  "breakdown": [
+    "The composite key starts with CustomerID, matching an equality predicate.",
+    "OrderDate is next, supporting the range predicate within that customer.",
+    "INCLUDE (Amount) may cover the SELECT without an extra lookup.",
+    "Use the actual execution plan and logical reads to evaluate benefit; do not assume an index always wins."
+  ],
+  "practice": "Explain why an index on (OrderDate, CustomerID) might be less useful for this particular predicate pattern. Name two measurements you would check.",
+  "answer": "-- Example evaluation in SSMS:\nSET STATISTICS IO ON;\nSET STATISTICS TIME ON;\nSELECT OrderDate, Amount FROM dbo.Orders\nWHERE CustomerID = 42 AND OrderDate >= '2026-01-01';\n-- Compare logical reads, elapsed time, and the actual execution plan.\nSET STATISTICS IO OFF;\nSET STATISTICS TIME OFF;",
+  "takeaways": [
+    "Index key order matters.",
+    "Compare plans and IO before and after changes; test on representative data."
+  ]
+}

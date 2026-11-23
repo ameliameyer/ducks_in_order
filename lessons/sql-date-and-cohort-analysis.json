@@ -1,0 +1,16 @@
+{
+  "concept": "A cohort groups entities by a shared starting period, such as their first order month. Cohort analysis measures behavior as time passes after that starting point.",
+  "example": "WITH FirstOrder AS (\n    SELECT CustomerID, MIN(OrderDate) AS FirstOrderDate\n    FROM Orders GROUP BY CustomerID\n)\nSELECT DATEFROMPARTS(YEAR(FirstOrderDate), MONTH(FirstOrderDate), 1) AS CohortMonth,\n       COUNT(*) AS Customers\nFROM FirstOrder\nGROUP BY DATEFROMPARTS(YEAR(FirstOrderDate), MONTH(FirstOrderDate), 1);",
+  "breakdown": [
+    "MIN finds the first observed order for each customer.",
+    "DATEFROMPARTS normalizes the date to the first of the month.",
+    "Grouping on CohortMonth counts customers who started in each month.",
+    "A full retention table additionally needs activity months and months-since-cohort."
+  ],
+  "practice": "Return each customer and their first-order cohort month without aggregating the customers together.",
+  "answer": "SELECT CustomerID,\n       DATEFROMPARTS(YEAR(MIN(OrderDate)), MONTH(MIN(OrderDate)), 1) AS CohortMonth\nFROM Orders\nGROUP BY CustomerID;",
+  "takeaways": [
+    "Define cohort entry precisely; first observed order may not be first-ever order.",
+    "Retention needs a clear activity definition and denominator."
+  ]
+}

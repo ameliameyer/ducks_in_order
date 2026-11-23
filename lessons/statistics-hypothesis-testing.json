@@ -1,0 +1,16 @@
+{
+  "concept": "A hypothesis test compares data to a null model. A p-value is the probability, assuming the null and test assumptions, of a result at least as extreme as observed.",
+  "example": "# Example: H0: average order amount is 500\n# Sample mean = 520, standard error = 10\n# z = (520 - 500) / 10 = 2\n# Two-sided normal p-value ≈ 0.0455",
+  "breakdown": [
+    "State H0 and the alternative before examining results.",
+    "Compute how far the estimate is from the null in standard-error units.",
+    "The p-value describes data extremeness under H0, not the probability H0 is true.",
+    "A small p-value does not establish practical business importance."
+  ],
+  "practice": "If a two-sided test yields p=0.08 and alpha=0.05, state the decision and whether that proves the null hypothesis.",
+  "answer": "Do not reject H0 at alpha=0.05 because 0.08 > 0.05.\nThis does not prove H0; evidence is insufficient to reject it under this test.",
+  "takeaways": [
+    "Statistical significance and effect size are different.",
+    "Failing to reject is not proving no effect."
+  ]
+}

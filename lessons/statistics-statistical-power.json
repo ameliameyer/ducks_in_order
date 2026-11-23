@@ -1,0 +1,16 @@
+{
+  "concept": "Power is the probability that a test rejects a false null hypothesis for a specified effect size and design. It depends on sample size, variability, alpha, and the true effect.",
+  "example": "# Planning scenario:\n# Compare conversion rates in an A/B test.\n# Baseline conversion: 10%\n# Minimum meaningful lift: +2 percentage points (to 12%)\n# Choose alpha = 0.05 and target power = 0.80\n# Use a two-proportion sample-size calculation before launch.",
+  "breakdown": [
+    "Specify the effect size that matters to the business.",
+    "A smaller detectable effect generally requires more observations.",
+    "Higher variability or stricter alpha generally increases required sample size.",
+    "Power is a design property for a specified true effect, not the probability your hypothesis is true."
+  ],
+  "practice": "Explain whether detecting a +0.5 percentage-point lift usually needs more or fewer observations than detecting +2 points, all else equal.",
+  "answer": "More observations are generally needed to reliably detect a smaller +0.5 percentage-point effect at the same alpha and power.",
+  "takeaways": [
+    "Plan sample size before analyzing outcomes.",
+    "Low power can make meaningful effects hard to detect."
+  ]
+}

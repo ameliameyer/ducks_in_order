@@ -1,0 +1,16 @@
+{
+  "concept": "Conditional aggregation computes multiple metrics in one GROUP BY using CASE inside aggregate functions.",
+  "example": "SELECT CustomerID,\n       SUM(CASE WHEN Amount >= 500 THEN 1 ELSE 0 END) AS LargeOrderCount,\n       SUM(CASE WHEN Amount >= 500 THEN Amount ELSE 0 END) AS LargeOrderRevenue,\n       COUNT(*) AS TotalOrders\nFROM Orders\nGROUP BY CustomerID;",
+  "breakdown": [
+    "CASE produces a 1 or 0 for each order.",
+    "SUM of those flags counts orders matching the condition.",
+    "A second CASE sums only qualifying revenue.",
+    "GROUP BY returns one result row per customer."
+  ],
+  "practice": "Add SmallOrderRevenue for orders below 500 and compute TotalRevenue.",
+  "answer": "SELECT CustomerID,\n       SUM(CASE WHEN Amount < 500 THEN Amount ELSE 0 END) AS SmallOrderRevenue,\n       SUM(Amount) AS TotalRevenue\nFROM Orders\nGROUP BY CustomerID;",
+  "takeaways": [
+    "Use ELSE 0 when a zero contribution is intended.",
+    "COUNT(*) counts rows; COUNT(column) counts non-NULL values."
+  ]
+}

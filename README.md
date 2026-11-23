@@ -1,31 +1,18 @@
-# Ducks In Order — v2
+# Ducks In Order v3 — Study Library
 
-A GitHub Pages learning hub reusing the portfolio visual theme.
+GitHub Pages static site. Upload all files to the root of your existing repository, replacing matching files.
 
-## Publish / upgrade
+## Content
+- 9 learning tracks, 52 mapped lessons.
+- 21 complete lessons: SQL (9), Python (6), Statistics (6).
+- Other subjects remain marked Planned; no empty lesson links.
+- Each ready lesson includes concept, example, breakdown, practice, reference solution, takeaways.
 
-Upload **all contents** of this ZIP to the root of the existing `ducks-in-order` repository, replacing same-named files and adding new ones. Do **not** create a second repository. GitHub Pages should remain set to `main` / `(root)`.
+## Using
+Open Curriculum to select any Ready lesson; use Study Guides to learn and Practice Lab to answer then reveal the reference. Practice responses are not saved or automatically graded.
 
-## What's available
+## Adding a lesson
+Create `lessons/<id>.json` with fields `concept`, `example`, `breakdown` (array), `practice`, `answer`, `takeaways` (array); set corresponding catalog status to `ready`.
 
-- Dashboard, roadmap, curriculum catalog, study guides, practice lab, notes, mastery tracker.
-- 9 learning tracks and a complete concept-level catalog.
-- Three fully written SQL lessons with examples, explanations, exercises, and reference answers. Other topics are **clearly labeled Planned**, not presented as finished lessons.
-- Lessons follow Concept → Example → Breakdown → Practice → Takeaways.
-- Existing skill scores remain unassessed.
-
-## Update content
-
-- `data/catalog.json`: all lesson titles and readiness flags.
-- `lessons/*.json`: fully written lesson content; add a new JSON file and change the matching catalog item from `planned` to `ready`.
-- `data/skills.json`: verified mastery scores (null means unassessed).
-- `data/roadmap.json`: curriculum phases.
-- `data/notes.json` and `notes/*.md`: personal notes.
-
-## Limitations
-
-This is a static website. Exercises are self-checked, not executed or graded. Text entered into the practice area is not saved to GitHub. There is no authentication; all content in a public repository and public GitHub Pages site is publicly accessible even if not linked from your portfolio. Never publish work/customer data or personal secrets.
-
-## Local preview
-
-Run `python -m http.server 8000` from this directory, then visit `http://localhost:8000`. Opening HTML directly as `file://` may block JSON loading.
+## Caveats
+Code samples are educational examples, not executed by the website. Verify against your own schema and environment. The website is public; do not paste confidential employer data.

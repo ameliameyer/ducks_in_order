@@ -1,0 +1,16 @@
+{
+  "concept": "A confidence interval is a procedure that produces intervals with a specified long-run coverage rate under its assumptions. A 95% interval is not a 95% probability statement about a fixed parameter after observing the data.",
+  "example": "# Illustrative large-sample interval for a population mean:\n# sample mean = 50; standard error = 2\n# 95% normal approximation: 50 ± 1.96(2)\n# interval = [46.08, 53.92]",
+  "breakdown": [
+    "The sample mean is the point estimate.",
+    "Standard error quantifies uncertainty in the estimate.",
+    "1.96 is the approximate normal critical value for 95% two-sided coverage.",
+    "The method assumes the normal approximation is suitable; small samples may need a t-based interval."
+  ],
+  "practice": "A sample mean is 120 and standard error is 5. Compute an approximate 95% normal confidence interval and explain it correctly.",
+  "answer": "120 ± 1.96(5) = 120 ± 9.8 = [110.2, 129.8].\nAcross repeated samples, approximately 95% of intervals built by this procedure would contain the fixed population mean, if assumptions hold.",
+  "takeaways": [
+    "Confidence level describes the procedure’s long-run coverage.",
+    "Narrow intervals do not guarantee unbiased sampling."
+  ]
+}

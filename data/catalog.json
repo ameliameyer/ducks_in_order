@@ -28,7 +28,7 @@
     "track": "SQL",
     "title": "LAG and LEAD",
     "order": 4,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/sql-lag-and-lead.json"
   },
   {
@@ -36,7 +36,7 @@
     "track": "SQL",
     "title": "Conditional aggregation",
     "order": 5,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/sql-conditional-aggregation.json"
   },
   {
@@ -44,7 +44,7 @@
     "track": "SQL",
     "title": "Date and cohort analysis",
     "order": 6,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/sql-date-and-cohort-analysis.json"
   },
   {
@@ -52,7 +52,7 @@
     "track": "SQL",
     "title": "Query grain and join duplication",
     "order": 7,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/sql-query-grain-and-join-duplication.json"
   },
   {
@@ -60,7 +60,7 @@
     "track": "SQL",
     "title": "Execution plans and indexes",
     "order": 8,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/sql-execution-plans-and-indexes.json"
   },
   {
@@ -68,7 +68,7 @@
     "track": "SQL",
     "title": "SQL dialect portability",
     "order": 9,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/sql-sql-dialect-portability.json"
   },
   {
@@ -76,7 +76,7 @@
     "track": "Python",
     "title": "Functions and data structures",
     "order": 1,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/python-functions-and-data-structures.json"
   },
   {
@@ -84,7 +84,7 @@
     "track": "Python",
     "title": "pandas filtering and grouping",
     "order": 2,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/python-pandas-filtering-and-grouping.json"
   },
   {
@@ -92,7 +92,7 @@
     "track": "Python",
     "title": "Joins and missing data",
     "order": 3,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/python-joins-and-missing-data.json"
   },
   {
@@ -100,7 +100,7 @@
     "track": "Python",
     "title": "Vectorization and performance",
     "order": 4,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/python-vectorization-and-performance.json"
   },
   {
@@ -108,7 +108,7 @@
     "track": "Python",
     "title": "Visualization and EDA",
     "order": 5,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/python-visualization-and-eda.json"
   },
   {
@@ -116,7 +116,7 @@
     "track": "Python",
     "title": "Testing and packaging",
     "order": 6,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/python-testing-and-packaging.json"
   },
   {
@@ -124,7 +124,7 @@
     "track": "Statistics",
     "title": "Probability and distributions",
     "order": 1,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/statistics-probability-and-distributions.json"
   },
   {
@@ -132,7 +132,7 @@
     "track": "Statistics",
     "title": "Sampling and bias",
     "order": 2,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/statistics-sampling-and-bias.json"
   },
   {
@@ -140,7 +140,7 @@
     "track": "Statistics",
     "title": "Confidence intervals",
     "order": 3,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/statistics-confidence-intervals.json"
   },
   {
@@ -148,7 +148,7 @@
     "track": "Statistics",
     "title": "Hypothesis testing",
     "order": 4,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/statistics-hypothesis-testing.json"
   },
   {
@@ -156,7 +156,7 @@
     "track": "Statistics",
     "title": "Linear regression",
     "order": 5,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/statistics-linear-regression.json"
   },
   {
@@ -164,7 +164,7 @@
     "track": "Statistics",
     "title": "Statistical power",
     "order": 6,
-    "status": "planned",
+    "status": "ready",
     "file": "lessons/statistics-statistical-power.json"
   },
   {

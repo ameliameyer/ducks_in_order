@@ -1,0 +1,16 @@
+{
+  "concept": "Linear regression estimates an outcome as a linear combination of predictors. Coefficients describe conditional associations; they do not automatically establish causality.",
+  "example": "# Model: Revenue = 200 + 15 × ActiveCustomers\n# For 10 active customers:\n# Predicted Revenue = 200 + 15(10) = 350",
+  "breakdown": [
+    "200 is the intercept, the prediction when ActiveCustomers is zero.",
+    "15 is the modeled change in revenue per additional active customer.",
+    "Prediction at 10 gives 350.",
+    "Assess residuals, fit, extrapolation, and omitted confounders before trusting interpretation."
+  ],
+  "practice": "Under the same model, predict revenue for 12 active customers and explain why the coefficient may not be causal.",
+  "answer": "200 + 15(12) = 380.\nThe association could reflect confounders such as customer size or seasonality; regression alone does not establish causation.",
+  "takeaways": [
+    "Interpret coefficients conditionally and in units.",
+    "Avoid extrapolating far beyond observed predictor values."
+  ]
+}
